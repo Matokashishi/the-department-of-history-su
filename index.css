@@ -881,14 +881,34 @@ a {
 
 /*--------------ส่วนของ footer-----------------*/
 .footer {
-
-    height: 80px;
+    height: auto;
     background-color: #a39583;
 }
-
+.footer-text{
+   display: flex;
+   justify-content: right;
+   align-content: center;
+   padding-right: 80px;
+   gap: 20px;
+   padding-top: 20px;
+}
+h12{
+    font-size: 13px;
+    color: white;  
+}
+.footer-text p{
+    font-size: 11px;
+    color: white;
+   
+}
+h13 {
+    font-size: 13px;
+    color: white;
+    padding: 0%;
+}
 /*------------------------------ปุ่ม BacktoTop----------------------------*/
 
-                #backToTop {
+    #backToTop {
                     display: none;
                     /* ซ่อนปุ่มไว้ก่อน */
                     position: fixed;
@@ -904,7 +924,7 @@ a {
                     font-size: 16px;
                 }
         
-                #backToTop:hover {
+    #backToTop:hover {
                     background-color: #bbb2a7;
                 }
 
