@@ -1,0 +1,1022 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap');
+body {
+    width: 1440px;
+    height: auto;
+    font-family: 'Prompt', sans-serif !important;
+}
+.br{
+    background-color: #fffdfa;
+}
+
+/*--------------ส่วนของ Homepage-----------------*/
+.homepage {
+    height: 720px;
+    background-color: #fffdfa;
+}
+/*-------------คำสั่งรูปขยับเมื่อโดน------------------*/
+
+.home2{
+    transition: transform 0.3s ease-in-out;
+}
+
+.home2:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* เมนูนำทาง */
+.navbar {
+    width: 100%;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.navbar-2{
+    display: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 700px;
+
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Prompt', sans-serif;
+    color: #695b54;
+    font-size: 20px;
+    font-weight: 400;
+    transition: transform 0.1s ease-in-out;
+
+}
+
+.navbar ul li a:hover {
+    text-shadow: 0 0 8px #a39583;
+}
+
+/* ส่วนของคอนเทนต์ */
+.image-container {
+    flex: 1;
+    /* ให้รูปใช้พื้นที่ตามขนาดที่เหมาะสม */
+    display: flex; 
+    justify-content: flex-start;
+    /* ให้รูปชิดซ้าย*/
+}
+
+.image-container img {
+    max-width: 100%;
+    /* ป้องกันไม่ให้รูปใหญ่เกินไป */
+    height: auto;
+    object-fit: cover;
+    /* ป้องกันการบิดเบี้ยวของภาพ */
+    padding-top: 70px;
+}
+
+/* จัดการข้อความ */
+.text-container {
+    width: 45%;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    /* จัดให้อยู่ตรงกลางภาพ */
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* ทำให้ข้อความชัดขึ้น */
+}
+
+.text-container h1 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-container h1:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+.text-container h1 {
+    padding-top: 30px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    color: #a39583;
+    font-size: 98px;
+    text-align: center;
+    width: 900px;
+
+}
+
+.subtitle {
+    font-family: 'Prompt', sans-serif;
+    color: #695b54;
+    font-size: 32px;
+    text-align: center;
+    width: 900px;
+}
+/*------ภาพเด้งได้--------*/
+.subtitle {
+    transition: transform 0.3s ease-in-out;
+}
+
+.subtitle:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+
+/* -------------- ส่วนของ Programs ----------------- */
+.programs {
+    
+    max-width: 1440px;
+    /* ป้องกันไม่ให้ขยายเกินไป */
+    height: 720px;
+    background-color: #fffdfa;
+    display: flex;
+    justify-content: space-between;
+    /* จัดให้เนื้อหากับรูปห่างกัน */
+     margin: auto;
+    /* จัดให้อยู่ตรงกลาง */
+    position: relative;
+    /* ใช้เพื่อให้ "PROGRAMS" ซ้อนทับ */
+}
+
+/* กล่องข้อความ */
+.text-box {
+    flex: 1;
+    /* ให้ขยายตามพื้นที่ที่เหลือ */
+    padding: 60px;
+    position: relative;
+    /* เพื่อให้ Header วางทับ */
+}
+
+/* หัวข้อ Programs */
+.header {
+    font-size: 84px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: right;
+    /* จัดให้อยู่ด้านขวา */
+    z-index: 10;
+    /* ให้อยู่ด้านบน */
+    position: absolute;
+    top: 25%;
+        /* จัดให้อยู่ตรงกลางภาพ */
+    left: 78%;
+    transform: translate(-50%, -50%);
+    
+}
+.header span {
+    transition: transform 0.3s ease-in-out;
+}
+
+.header span:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.header span {
+
+    display: block;
+    color: #695B54;
+}
+
+.header span:nth-child(2) {
+    color: #C7B8A9;
+}
+
+.header span:nth-child(1) {
+    color: #F1E6D4;
+}
+
+/* กล่องเนื้อหา */
+.box {
+    
+    width: 360px;
+    height: 360px;
+}
+
+/* เนื้อหา */
+.content {
+    font-family: 'Prompt', sans-serif;
+    color: #695b54;
+    /*border: solid 4px #DED8D0; */
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 50px;
+    width: 800px;
+    height: 600px;
+}
+
+
+/* กล่องรูปภาพ */
+.image-box {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    /* จัดรูปให้อยู่ตรงกลาง */
+    align-items: right;
+}
+
+/* รูปภาพ */
+.image-box img {
+    
+    max-width: 25%;
+    z-index: 9;
+        /* ให้อยู่ด้านบน */
+    position: absolute;
+    top: 70%;
+        /* จัดให้อยู่ตรงกลางภาพ */
+    left: 80%;
+    transform: translate(-50%, -50%);
+   }
+
+
+
+/*--------------ส่วนของ intro-----------------*/
+.intro {
+    font-family: 'Prompt', sans-serif;
+    background-color: #c7b8a9;
+    height: 460px;
+}
+
+/*------ภาพเด้งได้--------*/
+.icon img {
+    transition: transform 0.3s ease-in-out;
+}
+.icon img:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.intro_text {
+    font-family: 'Prompt', sans-serif;
+    color: #fffdfa;
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.intro_text {
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro_text:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.icon img {
+    max-width: 120px;
+    height: 120px;
+    margin: 0 100px;
+    /* เพิ่มระยะห่างซ้าย-ขวาของแต่ละรูป */
+    
+    
+}
+h7:hover {
+    text-shadow: 0 0 20px #695B54;
+}
+h5:hover {
+    text-shadow: 0 0 20px #695B54;
+}
+h5{
+    color: #fffdfa !important;
+    padding-top: 30px;
+    text-align: center;
+    transition: transform 3s ease-in-out;
+}
+h7{
+    
+    color: #fffdfa;
+    transition: transform 3s ease-in-out;
+}
+
+
+
+
+/*--------------ส่วนของ Outline-----------------*/
+.outline {
+    height: auto;
+    background-color: #fffdfa;
+    position: relative;
+    /* ใช้เพื่อให้ "PROGRAMS" ซ้อนทับ */
+}
+.outlinerow1{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: solid 0px red; */
+}
+.col-md-6 {
+    flex: 1;
+    /* ทำให้ขนาดแต่ละคอลัมน์เท่ากัน */
+    padding: 10px;
+}
+.text-outline-top {
+    border: solid 0px red; 
+}
+.text-outline-top h2{
+    padding-top: 1px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 78px;
+    font-weight: bold;
+    color: #493e2b;
+    padding-left: 120px;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+.text-outline-top h2 {
+    transition: transform 0.3s ease-in-out;
+}
+.text-outline-top h2:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.text-outline-content {
+    border: solid 0px red;
+}
+.text-outline-content h8{
+    font-size: 26px;
+    color: #493e2b;
+    z-index: 9;
+        /* ให้อยู่ด้านบน */
+    position: absolute;
+    top: 3%;
+        /* จัดให้อยู่ตรงกลางภาพ */
+    left: 48%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+.text-outline-content h9 {
+    font-size: 22px;
+    color: #493e2b;
+    z-index: 9;
+        /* ให้อยู่ด้านบน */
+    position: absolute;
+    top: 5%;
+        /* จัดให้อยู่ตรงกลางภาพ */
+    left: 59%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+}
+ 
+ .container {
+    display: flex;
+    align-items: stretch;
+    /* ให้ความสูงของกล่องขยายเท่ากัน */
+     max-width: 1200px;
+     border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+            -6px -6px 10px -1px rgba(0, 0, 0, 0.15);
+     overflow: hidden;
+ }
+
+ /*-------------------outline 1---------------------*/
+ /* ---- ฝั่งซ้าย (ภาพ) ---- */
+ .left-section {
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+ }
+
+ .left-section img {
+     max-width: 100%;
+     border-radius: 10px;
+ }
+
+ /* ---- ฝั่งขวา (ข้อมูลภาคเรียน) ---- */
+ .right-section {
+     width: 50%;
+    padding: 40px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .title {
+    color: #493e2b;
+     font-size: 28px;
+     font-weight: bold;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .semester {
+     background-color: #D8D1C7;
+     padding: 20px;
+     border-radius: 10px;
+     margin-bottom: 15px;
+    
+ }
+ 
+.semester:hover {
+    background-color: #b7b1a9;
+    transition: background-color 0.3s ease;
+}
+
+ .semester h3 {
+     margin: 0 0 10px 0;
+     font-size: 22px;
+    color: #493e2b;
+ }
+
+ .semester ul {
+     padding-left: 30px;
+ }
+
+ .semester p {
+     font-size: 18px;
+     color: #493e2b;
+ }
+.semester h10{
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #493e2b;
+    text-align: left;
+   
+}
+/*-------------------outline 2---------------------*/
+.right-section-two {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/*-------------คำสั่งรูปขยับเมื่อโดน------------------*/
+
+.outlinetwo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.outlinetwo:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.semester-two:hover {
+    background-color: #b7b1a9;
+    transition: background-color 0.3s ease;
+}
+.right-section-two img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* ---- ฝั่งขวา (ข้อมูลภาคเรียน) ---- */
+ .container-two {
+        display: flex;
+        justify-content: center;
+        /* ทำให้กล่องอยู่ตรงกลาง */
+        align-items: center;
+        /* จัดให้กึ่งกลางแนวตั้ง (ถ้าต้องการ) */
+        max-width: 1320px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        align-items: stretch;
+                /*ให้ความสูงของกล่องขยายเท่ากัน */
+        margin: 0 auto;
+        /* ทำให้กล่องอยู่กึ่งกลางแนวนอน */
+   
+ }
+.left-section-two {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-two {
+    color: #493e2b;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.semester-two {
+    background-color: #D8D1C7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.semester-two h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    color: #493e2b;
+}
+
+.semester-two ul {
+    padding-left: 30px;
+}
+
+.semester-two p {
+    font-size: 18px;
+    color: #493e2b;
+}
+
+.semester-two h10 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #493e2b;
+    text-align: left;
+
+}
+
+
+
+
+/*--------------ส่วนของ curriculum-----------------*/
+.curriculum {
+
+    height: auto;
+    background-color: #fffdfa; }
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #493e2b;
+}
+
+.curriculum-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.curriculum-column {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.collapsible {
+    background-color: #ded8d0;
+    color: #493e2b;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #b7b1a9;
+}
+
+
+.subjects img{
+    flex: 1;
+        /* ให้รูปใช้พื้นที่ตามขนาดที่เหมาะสม */
+    display: flex;
+    justify-content: flex-start;
+        /* ให้รูปชิดซ้าย*/
+    object-fit: cover;
+    /* ให้รูปภาพยังคงสัดส่วนที่สวยงาม */
+}
+
+.text-curriculum-content{
+    padding-left: 130px;
+}
+
+
+
+
+
+/*--------------ส่วนของ faculty-----------------*/
+.faculty {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: auto;
+    background-color: #c7b8a9;
+}
+.faculty-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.faculty-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 92px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.faculty-card {
+    background: #f7f6f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.faculty-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.faculty-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #493e2b;
+}
+
+.faculty-email {
+    font-size: 14px;
+    color: #493e2b;
+}
+.faculty-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.faculty-card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+
+
+
+/*--------------ส่วนของ fqa-----------------*/
+.fqa {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    background-color: #fffdfa;
+}
+.fqa-wrapper {
+  
+    /* กำหนดความกว้างไม่ให้แคบเกินไป */
+    /* จัดให้อยู่กึ่งกลาง */
+    
+    text-align: center;
+    
+}
+
+ .fqa-header {
+     font-size: 92px;
+     font-weight: bold;
+     margin-bottom: 20px;
+    color: #493e2b;
+ }
+
+ .fqa-grid {
+    width: 1200px;
+    display: grid !important;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+    margin: 10px auto;
+    padding: 100px;
+    padding-top: 10px;
+        
+ }
+
+ .fqa-item {
+    
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     cursor: pointer;
+     transition: transform 0.2s;
+ }
+
+ .fqa-item:hover {
+     transform: scale(1.02);
+ }
+
+ .fqa-item img {
+     width: 100%;
+     height: 150px;
+     object-fit: cover;
+     border-radius: 10px;
+ }
+
+ .fqa-item h3 {
+     margin: 10px 0 0;
+     font-size: 20px;
+    color: #493e2b;
+ }
+
+ .fqa-item p {
+     font-size: 16px;
+    color: #493e2b;
+ }
+
+ .answer {
+     display: none;
+     margin-top: 10px;
+     font-size: 14px;
+    color: #493e2b;
+ }
+
+
+
+/*--------------ส่วนของ contact-----------------*/
+.contact {
+    height: 480px;
+    background-color: #fffdfa;
+    padding: 50px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactface {
+    font-family: 'Prompt', sans-serif;
+    flex: 1;
+    padding: 60px;
+    padding-top: 0px;
+    text-align: left;
+    color: #a39583;
+    font-size: 18px;
+    /* สีข้อความ */
+}
+
+.confont {
+    font-family: 'Prompt', sans-serif;
+    font-size: 72px;
+    font-weight: 550;
+    /*ตัวหนา*/
+
+}
+
+.book-corner,
+.download {
+    font-family: 'Prompt', sans-serif;
+    background-color: #a39583;
+    color: white;
+
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+
+    max-width: 360px;
+    /* จำกัดความกว้าง */
+    padding: 10px;
+    margin: 10px auto;
+    /* จัดให้อยู่กึ่งกลาง */
+}
+
+.book-corner {
+    width: 200px;
+    /* กำหนดขนาดปุ่ม BOOK CORNER */
+}
+
+.download {
+    width: 350px;
+    /* กำหนดขนาดปุ่มดาวน์โหลด */
+}
+
+button:hover {
+    background-color: #7d6b56;
+}
+
+.faceicon {
+
+    display: flex;
+    align-items: flex-start;
+    /* จัดข้อความให้อยู่ด้านบนของไอคอน */
+    font-family: 'Prompt', sans-serif;
+    color: #9C8B75;
+}
+
+.fb-icon {
+
+    padding-top: 8px;
+    /* สีพื้นหลังของไอคอน */
+
+    /* สีของตัว "f" */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    /* มุมโค้งเล็กน้อย */
+    margin-right: 10px;
+    /* ระยะห่างจากข้อความ */
+}
+
+a {
+    text-decoration: none !important;
+    /* ลบเส้นขีดใต้ลิงก์ */
+    border: none;
+    /* ป้องกันเส้นขีดที่อาจเกิดขึ้น */
+    outline: none;
+    /* เอาเส้นขอบตอนคลิกออก */
+}
+
+/*--------------ส่วนของ footer-----------------*/
+.footer {
+
+    height: 80px;
+    background-color: #a39583;
+}
+
+/*------------------------------ปุ่ม BacktoTop----------------------------*/
+
+                #backToTop {
+                    display: none;
+                    /* ซ่อนปุ่มไว้ก่อน */
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 1000;
+                    background-color: #7d6b56;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+        
+                #backToTop:hover {
+                    background-color: #bbb2a7;
+                }
+
+
+
+
+/*--------------Res-----------------*/
+@media screen and (min-width: 360px) and (max-width: 414px) {
+    
+    .navbar ul li a{
+        display: none;
+    }
+    
+    .text-container {
+            width: 45%;
+            text-align: left;
+            position: absolute;
+            top: 27%;
+            /* จัดให้อยู่ตรงกลางภาพ */
+            left: 118%;
+            transform: translate(-50%, -50%);
+    
+            /* ทำให้ข้อความชัดขึ้น */
+        }
+    
+    .text-container h1 {
+            transition: transform 0.3s ease-in-out;
+        }
+    
+    .text-container h1:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+    
+    .text-container h1 {
+            padding-top: 30px;
+            font-family: 'Prompt', sans-serif;
+            font-weight: bold;
+            color: #a39583;
+            font-size: 98px;
+            text-align: center;
+            width: 900px;
+    
+        }
+    
+    .subtitle {
+            font-family: 'Prompt', sans-serif;
+            color: #695b54;
+            font-size: 32px;
+            text-align: center;
+            width: 900px;
+        }
+    
+        /*------ภาพเด้งได้--------*/
+    .subtitle {
+            transition: transform 0.3s ease-in-out;
+        }
+    
+    .subtitle:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+        .navbar-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #a39583;
+            color: white;
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+    
+        /* Hamburger Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+    
+        .bar {
+            background-color: white;
+            height: 4px;
+            width: 30px;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+    
+        /* เมนูสำหรับ Desktop */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+    
+        .nav-links li {
+            padding: 10px;
+        }
+    
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+    
+    
+        }
+
+
+    
+
+
+
