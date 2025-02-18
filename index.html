@@ -31,33 +31,50 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- Navbar -->
         <nav class="navbar-2">
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#outline">Course Outline</a></li>
-                <li><a href="#curriculum">Curriculum</a></li>
-                <li><a href="#faculty">Faculty</a></li>
-                <li><a href="#fqa">Q&A</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas-menu" id="offcanvas">
+                <button class="close-btn" id="close-menu">&times;</button>
+                <ul class="nav-links">
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#outline">Course Outline</a></li>
+                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li><a href="#faculty">Faculty</a></li>
+                    <li><a href="#fqa">Q&A</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         
+
+        
         <script>
+
             document.addEventListener("DOMContentLoaded", function () {
                     const mobileMenu = document.getElementById("mobile-menu");
-                    const navLinks = document.querySelector(".nav-links");
+                    const offcanvasMenu = document.getElementById("offcanvas");
+                    const closeMenu = document.getElementById("close-menu");
 
+                    // เปิดเมนู
                     mobileMenu.addEventListener("click", function () {
-                        navLinks.classList.toggle("active");
+                        offcanvasMenu.classList.add("active");
+                    });
+
+                    // ปิดเมนู
+                    closeMenu.addEventListener("click", function () {
+                        offcanvasMenu.classList.remove("active");
                     });
                 });
 
         </script>
+
+        
         
         <div class="image-containe">
             <img  src="pic/home/home2.png" alt="home2" class="home2" width="50%" >

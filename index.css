@@ -932,7 +932,7 @@ h13 {
 
 
 
-/*--------------Res-----------------*/
+                /*--------------Res-----------------*/
 @media screen and (min-width: 360px) and (max-width: 414px) {
     
     .navbar ul li a{
@@ -940,12 +940,12 @@ h13 {
     }
     
     .text-container {
-            width: 45%;
+            width: 55%;
             text-align: left;
             position: absolute;
             top: 27%;
             /* จัดให้อยู่ตรงกลางภาพ */
-            left: 118%;
+            left: 58%;
             transform: translate(-50%, -50%);
     
             /* ทำให้ข้อความชัดขึ้น */
@@ -986,57 +986,92 @@ h13 {
     .subtitle:hover {
             transform: translateY(-10px) scale(1.05);
         }
-        .navbar-2 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background-color: #a39583;
-            color: white;
-            position: fixed;
-            width: 100%;
-            height: 50px;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
+    /*   เมนู       */
+    /* Navbar */
+    .navbar-2 {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #a39583;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+    /* Hamburger Menu */
+    .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    }
+
+    .bar {
+    background-color: white;
+    height: 4px;
+    width: 30px;
+    margin: 3px 0;
+    transition: 0.3s;
+    }
+
+    /* Offcanvas Menu */
+    .offcanvas-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* ซ่อนเมนู */
+    width: 250px;
+    height: 100vh;
+    background-color: #695B54;
+    transition: 0.3s;
+    padding-top: 60px;
+    }
+
+    .offcanvas-menu.active {
+    left: 0; /* แสดงเมนู */
+    }
+
+    /* ปุ่มปิด */
+    .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    }
+
+    /* รายการเมนู */
+    .nav-links {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    }
+
+    .nav-links li {
+    padding: 15px;
+    }
+
+    .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+    background-color: #a39583;
+    }
     
-        /* Hamburger Menu */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
         }
-    
-        .bar {
-            background-color: white;
-            height: 4px;
-            width: 30px;
-            margin: 3px 0;
-            transition: 0.3s;
-        }
-    
-        /* เมนูสำหรับ Desktop */
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-    
-        .nav-links li {
-            padding: 10px;
-        }
-    
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
-    
-    
-        }
+/*------------------------------------*/
 
 
+/*---------------Scroll Fn---------------------*/
 .scroll-up {
     opacity: 0;
     transform: translateY(20px);
@@ -1048,6 +1083,7 @@ h13 {
     opacity: 1;
     transform: translateY(0);
 }
+/*------------------------------------*/
 
 
 
