@@ -915,6 +915,7 @@ h13 {
                     bottom: 20px;
                     right: 20px;
                     z-index: 1000;
+                    
                     background-color: #7d6b56;
                     color: white;
                     border: none;
@@ -1036,7 +1037,19 @@ h13 {
         }
 
 
-    
+.scroll-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Make elements visible when scrolled */
+.scroll-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 
 
