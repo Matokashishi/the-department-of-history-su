@@ -17,67 +17,66 @@
 </head>
 
 <body>
-    <!---------------- Homepage--------------------->
-    <div class="homepage scroll-up" >
-
-        <!-- เมนูบาร์ -->
-        <nav class="navbar scroll-up">
-            <ul>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#outline">Course Outline</a></li>
+    <!-- เมนูบาร์ -->
+    <nav class="navbar scroll-up">
+        <ul>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#outline">Course Outline</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#fqa">Q&A</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar -->
+    <nav class="navbar-2">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas-menu" id="offcanvas">
+            <button class="close-btn" id="close-menu">&times;</button>
+            <ul class="nav-links">
+                <li><a href="#programs-2">Programs</a></li>
+                <li><a href="#outline-container">Course Outline</a></li>
                 <li><a href="#curriculum">Curriculum</a></li>
                 <li><a href="#faculty">Faculty</a></li>
                 <li><a href="#fqa">Q&A</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-        <!-- Navbar -->
-        <nav class="navbar-2">
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <!-- Offcanvas Menu -->
-            <div class="offcanvas-menu" id="offcanvas">
-                <button class="close-btn" id="close-menu">&times;</button>
-                <ul class="nav-links">
-                    <li><a href="#programs">Programs</a></li>
-                    <li><a href="#outline">Course Outline</a></li>
-                    <li><a href="#curriculum">Curriculum</a></li>
-                    <li><a href="#faculty">Faculty</a></li>
-                    <li><a href="#fqa">Q&A</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        
+        </div>
+    </nav>
+    
+    
+    
+    <script>
 
-        
-        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenu = document.getElementById("mobile-menu");
+            const offcanvasMenu = document.getElementById("offcanvas");
+            const closeMenu = document.getElementById("close-menu");
 
-            document.addEventListener("DOMContentLoaded", function () {
-                    const mobileMenu = document.getElementById("mobile-menu");
-                    const offcanvasMenu = document.getElementById("offcanvas");
-                    const closeMenu = document.getElementById("close-menu");
+            // เปิดเมนู
+            mobileMenu.addEventListener("click", function () {
+                offcanvasMenu.classList.add("active");
+            });
 
-                    // เปิดเมนู
-                    mobileMenu.addEventListener("click", function () {
-                        offcanvasMenu.classList.add("active");
-                    });
+            // ปิดเมนู
+            closeMenu.addEventListener("click", function () {
+                offcanvasMenu.classList.remove("active");
+            });
+        });
 
-                    // ปิดเมนู
-                    closeMenu.addEventListener("click", function () {
-                        offcanvasMenu.classList.remove("active");
-                    });
-                });
-
-        </script>
+    </script>
+    <!---------------- Homepage--------------------->
+    <div class="homepage scroll-up" >
 
         
         
         <div class="image-containe">
-            <img  src="pic/home/home2.png" alt="home2" class="home2" width="50%" >
+            <img  src="pic/home/home2.png" alt="home2" class="home2">
             <div class="text-container">
                 <h1>THE DEPARTMENT <br>OF HISTORY</h1>
                 <p class="subtitle">ภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์</p>
@@ -117,6 +116,44 @@
             </div>
         </div>
     </div>
+    <!----------------programs for smartphone--------------------->
+    <div class="programs-2 "><a id="programs-2"></a>
+        <div class="text-box-2">
+            <div class="box-2 scroll-up">
+                <p class="content-2 scroll-up">
+                    หลักสูตรการศึกษาของภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์
+                    ระดับปริญญาตรี (หลักสูตรปรับปรุง พ.ศ. 2564)
+                    หน่วยกิตตลอดหลักสูตรขั้นต่ำ 145 หน่วย แบ่งเป็น <br><br>
+                    หมวดวิชาทั่วไป 30 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับ
+                    24 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเลือก
+                    6 หน่วยกิต <br><br>
+                    หมวดวิชาเฉพาะ 109 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาพื้นฐานอักษร
+                    13 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาสาขาระดับต้นของคณะฯ
+                    12 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเอก
+                    60 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาโท
+                    24 หน่วยกิต <br><br>
+                    หมวดวิชาเสรี 6 หน่วยกิต
+                </p>
+            </div>
+        </div>
+        <div class="camera-2">
+            <div class="header-2 scroll-up">
+                <span>PROGRAMS</span>
+                <span>PROGRAMS</span>
+                <span>PROGRAMS</span>
+            </div>
+            <div class="image-box-2">
+                <img src="pic/home/camera.PNG" class="camera">
+            </div>
+        </div>
+    </div>
+    </div>
     
     <!----------------intro--------------------->
     <div class="intro scroll-up"> 
@@ -127,25 +164,55 @@
                     <div class="icon"><img src="pic/intro/intro_icon1.PNG" alt="icon1">
                     </div>
                     <h5 >ชั้นปีที่ 1</h5><br>
-                    <h7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จะเน้นเรียนหมวดวิชาทั่วไป รายวิชาพื้นฐานของคณะ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(หมวดวิชาเฉพาะ) เเละรายวิชาสาขาระดับต้น</h7>
+                    <h7>จะเน้นเรียนหมวดวิชาทั่วไป รายวิชาพื้นฐานของคณะ<br>(หมวดวิชาเฉพาะ) เเละรายวิชาสาขาระดับต้น</h7>
                     
                 </div>
                 <div class="col-md-4"> 
                     <div class="icon"><img src="pic/intro/intro_icon2.PNG" alt="icon2"></div>
                     <h5 >ชั้นปีที่ 2-3</h5><br>
-                    <h7>&nbsp;&nbsp;&nbsp;&nbsp;เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไป<br>&nbsp;&nbsp;&nbsp;&nbsp;อยู่บ้างเเละเรียนวิชาสาขาระดับต้น หรือพวกกลุ่มวิชาเสรี
-                    เมื่อปี 3 จะมี<br>&nbsp;&nbsp;&nbsp;&nbsp;การเรียนวิชาบังคับเลือกเป็นส่วนใหญ่ เเละเรียนรายวิชาโท</h7>
+                    <h7>เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไป<br>อยู่บ้างเเละเรียนวิชาสาขาระดับต้น หรือพวกกลุ่มวิชาเสรี
+                    เมื่อปี 3 จะมี<br>การเรียนวิชาบังคับเลือกเป็นส่วนใหญ่ เเละเรียนรายวิชาโท</h7>
                 </div>
                 <div class="col-md-4"> 
                     <div class="icon"><img src="pic/intro/intro_icon3.PNG" alt="icon3"></div>
                     <h5 >ชั้นปีที่ 4</h5><br>
-                    <h7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับเลือกเอกตามความสนใจ
+                    <h7>วิชาบังคับเลือกเอกตามความสนใจ
                     เเละรายวิชาโท</h7>
                 </div>
 
 
         </div>
         
+    </div>
+    <!----------------intro for smartphone--------------------->
+    <div class="intro-2 scroll-up">
+        <h2 class="intro_text-2 scroll-up">INTRO</h2>
+        <div class="intro-content-2 scroll-up">
+    
+            <div class="col-md-4">
+                <div class="icon-2-1 scroll-up"><img src="pic/intro/intro_icon1.PNG" alt="icon1" class="scroll-up">
+                </div>
+                <h5 class="icon-text-1 scroll-up">ชั้นปีที่ 1</h5><br>
+                <h7 class="icon-text-1 scroll-up">จะเน้นเรียนหมวดวิชาทั่วไป
+                    รายวิชาพื้นฐานของคณะ<br>(หมวดวิชาเฉพาะ)
+                    เเละรายวิชาสาขาระดับต้น</h7>
+    
+            </div>
+            <div class="col-md-4">
+                <div class="icon-2-2"><img src="pic/intro/intro_icon2.PNG" alt="icon2" class="scroll-up"></div>
+                <h5 class="icon-text-2 scroll-up">ชั้นปีที่ 2-3</h5><br>
+                <h7 class="icon-text-2 scroll-up">เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไปอยู่บ้างเเละเรียนวิชาสาขาระดับต้น
+                    หรือพวกกลุ่มวิชาเสรี
+                    เมื่อปี 3 จะมีการเรียนวิชาบังคับเลือกเป็นส่วนใหญ่ เเละเรียนรายวิชาโท</h7>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-2-1"><img src="pic/intro/intro_icon3.PNG" alt="icon3" class="scroll-up"></div>
+                <h5 class="icon-text-3 scroll-up">ชั้นปีที่ 4</h5><br>
+                <h7 class="icon-text-3 scroll-up">วิชาบังคับเลือกเอกตามความสนใจ
+                    เเละรายวิชาโท</h7>
+            </div>
+        </div>
+    <br>
     </div>
 
     <!----------------outline--------------------->
@@ -306,6 +373,68 @@
     <br>
     <br>
 </div>
+<!------------------ouline for smartphone----------------------------->
+<div class="outline-container scroll-up"><a id="outline-container"></a>
+    <div class="outline-header">
+        <h2>COURSE<br>OUTLINE</h2>
+        <p>แผนการเรียนเอกประวัติศาสตร์</p>
+        <p>ภาควิชาประวัติศาสตร์จะเเบ่งหมวดหมู่วิชาบังคับเอกออกเป็น 3 กลุ่ม</p>
+        <p>กลุ่มรายวิชาพื้นที่  กลุ่มรายวิชาพินิจ  กลุ่มรายวิชาทักษะ</p>
+    </div>
+
+    <div class="outline-year scroll-up">
+        <img src="pic/outline/1.png" class="outline-img" width="70%">
+        <div class="outline-content scroll-up">
+            <h3>ชั้นปีที่ 1</h3>
+            <h4>ภาคการศึกษาที่ 1</h4>
+            <p>• ควรเลือกเรียนหมวดวิชาทั่วไปหรือวิชาเฉพาะก่อน</p>
+            <h4>ภาคการศึกษาที่ 2</h4>
+            <p>• 415 101 ประวัติศาสตร์ของไทยและประเทศในอาเซียน</p>
+        </div>
+    </div>
+
+    <div class="outline-year scroll-up">
+        <img src="pic/outline/2.png" class="outline-img" width="70%">
+        <div class="outline-content scroll-up">
+            <h3>ชั้นปีที่ 2</h3>
+            <h4>ภาคการศึกษาที่ 1</h4>
+            <p>• 415 102 เหตุการณ์ปัจจุบันในปริทรรศน์ประวัติศาสตร์</p>
+            <h4>ภาคการศึกษาที่ 2</h4>
+            <p>• 415 201 ประวัติศาสตร์ไทยก่อนสมัยใหม่</p>
+            <p>• 415 202 ประวัติศาสตร์เอเชียตะวันออกเฉียงใต้ก่อนสมัยใหม่</p>
+            <p>• 415 203 ประวัติศาสตร์เอเชียในยุคจักรวรรดินิยม</p>
+            <p>• 415 204 ประวัติศาสตร์ยุโรปยุคสมัยใหม่ตอนต้น</p>
+        </div>
+    </div>
+
+    <div class="outline-year scroll-up">
+        <img src="pic/outline/3.png" class="outline-img" width="70%">
+        <div class="outline-content scroll-up">
+            <h3>ชั้นปีที่ 3</h3>
+            <h4>ภาคการศึกษาที่ 1</h4>
+            <p>• 415 301 มรดกทางวัฒนธรรมและความคิดของไทย</p>
+            <p>• 415 302 มรดกทางวัฒนธรรมและความคิดในเอเชีย</p>
+            <p>• 415 401 ปรัชญาประวัติศาสตร์และระเบียบวิธีทางประวัติศาสตร์</p>
+            <h4>ภาคการศึกษาที่ 2</h4>
+            <p>• 415 303 ความคิดและวัฒนธรรมตะวันตก</p>
+            <p>• 415 304 ประวัติศาสตร์กับการท่องเที่ยว</p>
+            <p>• 415 402 ประวัติศาสตร์นิพนธ์</p>
+            <p>• 415 451 การศึกษาเอกเทศ 1</p>
+        </div>
+    </div>
+
+    <div class="outline-year scroll-up">
+        <img src="pic/outline/4.png" class="outline-img" width="70%">
+        <div class="outline-content scroll-up">
+            <h3>ชั้นปีที่ 4</h3>
+            <h4>ภาคการศึกษาที่ 1</h4>
+            <p>• 415 452 การศึกษาเอกเทศ 2</p>
+            <p>• เลือกเรียนวิชาบังคับเลือกตามความสนใจขั้นต่ำ 9 หน่วยกิต</p>
+            <h4>ภาคการศึกษาที่ 2</h4>
+            <p>• เลือกเรียนวิชาบังคับเลือกตามความสนใจขั้นต่ำ 9 หน่วยกิต</p>
+        </div>
+    </div>
+</div>
 
 
 
@@ -314,15 +443,16 @@
 <div class="curriculum scroll-up"><a id="curriculum"></a> 
     <div class="outlinerow1">
         <div class="col-md-6">
-            <div class="text-outline-top">
+            <div class="text-cur-top">
                 <h2>Curriculum</h2>
             </div>
             <div class="text-curriculum-content">
             
                 <h9>ภาควิชาประวัติศาสตร์จะเเบ่งหมวดหมู่วิชาเลือกออกเป็น 3 กลุ่ม<br>
-                    กลุ่มรายวิชาพื้นที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กลุ่มรายวิชาพินิจ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กลุ่มรายวิชาทักษะ
+                    กลุ่มรายวิชาพื้นที่ กลุ่มรายวิชาพินิจ กลุ่มรายวิชาทักษะ
                 </h9>
             </div>
+            
         </div>
         <div class="col-md-6">
             <img src="pic/subjects/sub3.PNG" class="subjects" width="100%">

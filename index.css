@@ -4,10 +4,21 @@ body {
     height: auto;
     font-family: 'Prompt', sans-serif !important;
 }
+.navbar{
+    background-color: #fffdfa;
+}
 .br{
     background-color: #fffdfa;
 }
-
+.programs-2{
+    display: none;
+}
+.outline-container{
+    display: none;
+}
+.text-curriculum-content2{
+    display: none;
+}
 /*--------------ส่วนของ Homepage-----------------*/
 .homepage {
     height: 720px;
@@ -74,13 +85,14 @@ body {
     /* ให้รูปชิดซ้าย*/
 }
 
-.image-container img {
-    max-width: 100%;
+.home2 {
+    width: 780px;
+    height: 780px;
     /* ป้องกันไม่ให้รูปใหญ่เกินไป */
     height: auto;
     object-fit: cover;
     /* ป้องกันการบิดเบี้ยวของภาพ */
-    padding-top: 70px;
+    padding-top: 10%;
 }
 
 /* จัดการข้อความ */
@@ -88,9 +100,9 @@ body {
     width: 45%;
     text-align: left;
     position: absolute;
-    top: 30%;
+    top: 20%;
     /* จัดให้อยู่ตรงกลางภาพ */
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
 
     /* ทำให้ข้อความชัดขึ้น */
@@ -245,11 +257,14 @@ body {
 
 /*--------------ส่วนของ intro-----------------*/
 .intro {
+    
     font-family: 'Prompt', sans-serif;
     background-color: #c7b8a9;
     height: 460px;
 }
-
+.intro-2 {
+    display: none;
+}
 /*------ภาพเด้งได้--------*/
 .icon img {
     transition: transform 0.3s ease-in-out;
@@ -279,6 +294,11 @@ body {
 .intro-content {
     display: flex;
     justify-content: center;
+}
+.intro-content h7 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .icon {
@@ -563,12 +583,32 @@ h7{
 
     height: auto;
     background-color: #fffdfa; }
-h1 {
+.text-cur-top h2 {
     font-size: 40px;
     font-weight: bold;
     color: #493e2b;
+    display: flex;
+    justify-content: center;
+}
+.text-cur-top h2 {
+    padding-top: 1px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 78px;
+    font-weight: bold;
+    color: #493e2b;
+    padding-left: 50px;
+    text-transform: uppercase;
+    line-height: 1;
+
 }
 
+.text-cur-top h2 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-cur-top h2:hover {
+    transform: translateY(-10px) scale(1.05);
+}
 .curriculum-container {
     display: flex;
     justify-content: center;
@@ -929,28 +969,58 @@ h13 {
                     background-color: #bbb2a7;
                 }
 
+/*---------------Scroll Fn---------------------*/
+.scroll-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Make elements visible when scrolled */
+.scroll-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*------------------------------------*/
 
 
 
-                /*--------------Res-----------------*/
+/*--------------Res-----------------*/
 @media screen and (min-width: 360px) and (max-width: 414px) {
     
+    boder{
+        width: 360px;
+        height: auto;
+    }
+    .navbar{
+        display: none;
+    }
     .navbar ul li a{
         display: none;
     }
-    
+    /*----------HOME------------*/
+    .homepage{
+        height: auto;
+    }
+    .image-containe img{
+        padding-top: 10%;
+        width: 70%;
+    }
     .text-container {
             width: 55%;
             text-align: left;
             position: absolute;
-            top: 27%;
+            top: 29%;
             /* จัดให้อยู่ตรงกลางภาพ */
-            left: 58%;
+            left: 65%;
             transform: translate(-50%, -50%);
     
             /* ทำให้ข้อความชัดขึ้น */
         }
-    
+    .image-containe{
+        padding-top: 20px;
+    }
     .text-container h1 {
             transition: transform 0.3s ease-in-out;
         }
@@ -960,22 +1030,28 @@ h13 {
         }
     
     .text-container h1 {
-            padding-top: 30px;
+            padding-top: 10px;
             font-family: 'Prompt', sans-serif;
             font-weight: bold;
             color: #a39583;
-            font-size: 98px;
+            font-size: 80px;
             text-align: center;
-            width: 900px;
+            width: auto;
     
         }
     
     .subtitle {
+        
             font-family: 'Prompt', sans-serif;
             color: #695b54;
-            font-size: 32px;
-            text-align: center;
-            width: 900px;
+            font-size: 28px;
+            width: 500px;
+            position: absolute;
+            top: 97%;
+                /* จัดให้อยู่ตรงกลางภาพ */
+            left: 48%;
+            transform: translate(-50%, -50%);
+            
         }
     
         /*------ภาพเด้งได้--------*/
@@ -986,9 +1062,11 @@ h13 {
     .subtitle:hover {
             transform: translateY(-10px) scale(1.05);
         }
-    /*   เมนู       */
+    /*-------------เมนู---------------------*/
     /* Navbar */
     .navbar-2 {
+    
+    
     display: flex;
     align-items: center;
     padding: 15px 20px;
@@ -996,6 +1074,7 @@ h13 {
     color: white;
     position: fixed;
     width: 100%;
+    height: 180px;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -1010,9 +1089,9 @@ h13 {
 
     .bar {
     background-color: white;
-    height: 4px;
-    width: 30px;
-    margin: 3px 0;
+    height: 15px;
+    width: 80px;
+    margin: 4px 0;
     transition: 0.3s;
     }
 
@@ -1020,9 +1099,9 @@ h13 {
     .offcanvas-menu {
     position: fixed;
     top: 0;
-    left: -250px; /* ซ่อนเมนู */
-    width: 250px;
-    height: 100vh;
+    left: -1000px; /* ซ่อนเมนู */
+    width: 1000px;
+    height: 1000vh;
     background-color: #695B54;
     transition: 0.3s;
     padding-top: 60px;
@@ -1035,9 +1114,9 @@ h13 {
     /* ปุ่มปิด */
     .close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
+    top: 5px;
+    right: 10px;
+    font-size: 150px;
     background: none;
     border: none;
     color: white;
@@ -1058,7 +1137,7 @@ h13 {
     .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 100px;
     display: block;
     transition: 0.3s;
     }
@@ -1066,24 +1145,492 @@ h13 {
     .nav-links a:hover {
     background-color: #a39583;
     }
-    
+    /*---------------------------------*/
+
+    /*-----------------Programs----------------*/
+    .programs{
+        display: none;
+    }
+    .programs-2 {
+    background-color: #fffdfa;
+}
+
+    /* กล่องข้อความ */
+    .text-box {
+    display: none;
+    }
+
+    /* หัวข้อ Programs */
+    .header {
+    display: none;}
+
+    /* กล่องเนื้อหา */
+    .box {
+    display: none;
+    }
+
+    /* เนื้อหา */
+
+        .programs-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: 20px;
+            font-family: 'Prompt', sans-serif;
         }
+    
+        .text-box-2 {
+            order: 2;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .box-2 {
+            width: 100%;
+            max-width: 1200px;
+            height: 1000px;
+            background: #fffdfa;
+            border-radius: 10px;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+        }
+    
+        .content-2 {
+            font-size: 40px;
+            line-height: 1.5;
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            text-align: left;
+            color: #493e2b;
+        }
+    
+        .camera-2 {
+            order: 1;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .header-2 {
+            position: static;
+            text-align: center;
+            font-size: 150px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+    
+        .image-box-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .image-box-2 img {
+            max-width: 80%;
+            position: static;
+            transform: none;
+        }
+                .header-2 span {
+                    transition: transform 0.3s ease-in-out;
+                }
+        
+                .header-2 span:hover {
+                    transform: translateY(-10px) scale(1.05);
+                }
+        
+                .header-2 span {
+        
+                    display: block;
+                    color: #695B54;
+                }
+        
+                .header-2 span:nth-child(2) {
+                    color: #C7B8A9;
+                }
+        
+                .header-2 span:nth-child(1) {
+                    color: #F1E6D4;
+                }
+        /*------------------------------------*/
+
+                /*---------------Intro---------------------*/
+                .intro {
+                    display: none;
+                    height: auto;
+                    padding-bottom: 20px;
+                }
+        
+                .intro-2 {
+                    display: grid;
+                    font-family: 'Prompt', sans-serif;
+                    background-color: #c7b8a9;
+                    padding: 10px;
+                    text-align: center;
+                }
+        
+                .intro_text-2 {
+                    font-size: 180px;
+                    font-weight: bold;
+                    color: #fffdfa;
+                    text-transform: uppercase;
+                    padding: 20px 0;
+                }
+        
+                .intro_text-2 h2{
+                    font-size: larger;
+                    font-weight: bold;
+                    color: #fffdfa;
+                    text-transform: uppercase;
+                    padding: 20px 0;
+                }
+        
+                .intro-content-2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 50px;
+                }
+        
+                .icon-2-1,
+                .icon-2-2,
+                .icon-2-3 {
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                }
+        
+                .icon-2-1 img,
+                .icon-2-2 img,
+                .icon-2-3 img {
+                    max-width: 300px;
+                    height: 300px;
+                }
+        
+                .icon-text-1,
+                .icon-text-2,
+                .icon-text-3 {
+                    color: #fffdfa;
+                    font-size: 50px;
+                    text-align: center;
+                    padding: 48px;
+                    
+                }
+        
+                
+               
+    /*-----------------outline----------------*/
+        .outline{
+           display: none;
+        }
+        
+        .outline-container {
+                    display: grid;
+                }
+        
+                .outline-container {
+                    
+                    background-color: #fffdfa;
+                    font-family: 'Prompt', sans-serif;
+                    color: #493e2b;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    margin: auto;
+                    text-align: center;
+                    padding: 20px;
+                }
+        
+                .outline-header {
+                    
+                    margin-bottom: 20px;
+                }
+        
+                .outline-header h2 {
+                    font-size: 10rem;
+                    font-weight: bold;
+                }
+        
+                .outline-header p {
+                    font-size: 3rem;
+                }
+        
+                .outline-year {
+                    background: #fffdfa;
+                    border-radius: 10px;
+                    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                            -6px -6px 10px -1px rgba(0, 0, 0, 0.15);
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    text-align: left;
+                }
+        
+                .outline-year img {
+                    display: block;
+                    margin: 0 auto 15px;
+                    border-radius: 10px;
+                }
+        
+                .outline-content h3 {
+                    font-size: 6rem;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+        
+                .outline-content h4 {
+                    font-size: 5rem;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    color: #7a6a4d;
+                }
+        
+                .outline-content p {
+                    font-size: 3rem;
+                    padding-left: 10px;
+                    text-indent: -10px;
+                }
+    /*----------------curricurum-----------*/
+                .curriculum-container {
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+    .curriculum-column {
+        flex: 1;
+        min-width: 1000px; /* ปรับขนาดขั้นต่ำของแต่ละคอลัมน์ */
+        max-width: 540px; /* ปรับขนาดสูงสุดของแต่ละคอลัมน์ */
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    /* ปรับปุ่ม collapsible */
+    .collapsible {
+        background-color: #ded8d0;
+        color: #493e2b;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        font-size: 40px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .collapsible-content {
+        display: none;
+        padding: 10px;
+        background-color: white;
+        border-left: 4px solid #ded8d0;
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+
+    /* แสดงเนื้อหาหลังจากคลิก */
+    .collapsible.active + .collapsible-content {
+        display: block;
+    }
+    
+        .text-cur-top h2 {
+            padding-left: 10px;
+            /* เว้นระยะห่างจากด้านซ้าย 10px */
+            font-size: 150px;
+            text-align: left;
+            /* จัดข้อความชิดซ้าย */
+            width: auto;
+        }
+    
+        .text-cur-top {
+            display: flex;
+            justify-content: flex-start;
+            /* จัดให้อยู่ชิดซ้าย */
+            text-align: left;
+            /* จัดข้อความชิดซ้าย */
+            width: auto;
+        }
+        .text-curriculum-content{
+            display: flex;
+            justify-content: flex-start;
+                /* จัดให้อยู่ชิดซ้าย */
+            text-align: left;
+                /* จัดข้อความชิดซ้าย */
+            width: auto;
+          
+            padding-left: 10px;
+
+        }
+        .text-curriculum-content{
+            font-size: 40px;
+        }
+        .outlinerow1 {
+            flex-direction: column;
+        }
+    
+        .col-md-6 {
+            width: 100%;
+            /* ให้แสดงเต็มความกว้าง */
+        }
+        
+        /*-----------------faculty-------------------*/
+        .faculty{
+            height: auto;
+        }
+        .faculty-title{
+            font-size: 180px;
+        }
+
+        /*-----------------fqa-------------------*/
+                        .fqa{
+                            height: auto;
+                        }
+                        .fqa-grid {
+                            display: flex;
+                            flex-direction: column;
+                            /* จัดให้เนื้อหาวางเรียงลงทีละแถว */
+                            align-items: center;
+                            /* จัดกึ่งกลาง */
+                        }
+            
+                        .fqa-item {
+                            width: 100%;
+                            /* ให้ใช้พื้นที่เต็ม */
+                            max-width: 600px;
+                            /* จำกัดขนาดให้ดูสมดุล */
+                            margin-bottom: 20px;
+                            /* เพิ่มระยะห่างระหว่างแต่ละ FQA */
+                        }
+
+
+        /*---------------contact----------*/
+                .contact {
+        
+                    height: auto;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 20px;
+        
+                }
+                
+                .video iframe {
+        
+                    width: 1080px;
+                    height: 720px;
+                    /* ปรับให้เล็กลง */
+                }
+        
+                .confont {
+                    font-size: 150px;
+                    font-weight: 550;
+                    /* ลดขนาดลง */
+                }
+        
+                .contactface {
+                    font-size: 48px;
+                    color: #a39583;
+                    /* ปรับให้เข้มขึ้นเพื่ออ่านง่ายขึ้น */
+                    padding-top: 0px;
+                    padding-left: 10px;
+                    
+                        
+                }
+                                .book-corner {
+                                    width: 70%;
+                                    /* ปรับให้ยืดหยุ่นตามขนาดหน้าจอ */
+                                    max-width: 1000px;
+                                    padding: 10px;
+                                    margin: 10px auto;
+                                    display: block;
+                                    background-color: #A39583;
+                                    /* สีพื้นหลัง */
+                                    color: white;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                
+                                .download {
+                                    width: 100%;
+                                    /* ปรับให้ยืดหยุ่นมากขึ้น */
+                                    max-width: 1000px;
+                                    height: auto;
+                                    /* ปรับให้ขนาดเหมาะสม */
+                                    display: block;
+                                    margin: 10px auto;
+                                    background-color: #A39583;
+                                    /* สีพื้นหลัง */
+                                    color: white;
+                                    text-align: center;
+                                    padding: 15px;
+                                }
+        
+                           
+            
+                           
+                .fb-icon {
+        
+                    width: 120px;
+                    margin-right: 20px;
+                    padding-bottom: 30px;
+                }
+    /*--------------footer----------------------*/
+        .footer{
+            height: auto;
+        }
+        .footer-text h12{
+            font-size: 20px;
+        }
+        .footer-text h13 {
+                    font-size: 20px;
+                }
+        .footer-text p {
+                    font-size: 20px;
+                }
+    /*---------------button back----------------*/
+        #backToTop {
+            display: none;
+            /* ซ่อนปุ่มไว้ก่อน */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 100px;
+            height: 100px;
+            background-color: #7d6b56;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+        #backToTop:hover {
+            background-color: #bbb2a7;
+        }
+
+
+}
+
+
+        
+
+
+
 /*------------------------------------*/
 
 
-/*---------------Scroll Fn---------------------*/
-.scroll-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-/* Make elements visible when scrolled */
-.scroll-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-/*------------------------------------*/
 
 
 
