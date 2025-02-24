@@ -146,7 +146,7 @@ body {
 /* -------------- ส่วนของ Programs ----------------- */
 .programs {
     
-    max-width: 1440px;
+
     /* ป้องกันไม่ให้ขยายเกินไป */
     height: 720px;
     background-color: #fffdfa;
@@ -242,7 +242,7 @@ body {
 
 /* รูปภาพ */
 .image-box img {
-    
+    padding: 30px;
     max-width: 25%;
     z-index: 9;
         /* ให้อยู่ด้านบน */
@@ -252,7 +252,7 @@ body {
     left: 80%;
     transform: translate(-50%, -50%);
    }
-
+  
 
 
 /*--------------ส่วนของ intro-----------------*/
@@ -1047,9 +1047,9 @@ h13 {
             font-size: 28px;
             width: 500px;
             position: absolute;
-            top: 97%;
+            top: 110%;
                 /* จัดให้อยู่ตรงกลางภาพ */
-            left: 48%;
+            left: 50%;
             transform: translate(-50%, -50%);
             
         }
@@ -1179,7 +1179,10 @@ h13 {
             padding: 20px;
             font-family: 'Prompt', sans-serif;
         }
-    
+                 .camera {
+                     width: 760px;
+                     height: 780px;
+                 }
         .text-box-2 {
             order: 2;
             width: 100%;
@@ -1238,11 +1241,11 @@ h13 {
             position: static;
             transform: none;
         }
-                .header-2 span {
+                .header-2  {
                     transition: transform 0.3s ease-in-out;
                 }
         
-                .header-2 span:hover {
+                .header-2:hover {
                     transform: translateY(-10px) scale(1.05);
                 }
         
@@ -1275,6 +1278,7 @@ h13 {
                     padding: 10px;
                     text-align: center;
                 }
+                
         
                 .intro_text-2 {
                     font-size: 180px;
@@ -1323,7 +1327,23 @@ h13 {
                     padding: 48px;
                     
                 }
-        
+                /*-------------ทำให้รูปขยับ-------------*/
+                .icon-img {
+                                    transition: transform 0.3s ease-in-out;
+                                }
+                
+                .icon-img:hover {
+                                    transform: translateY(-10px) scale(1.05);
+                                }
+             /*-------------ทำให้ข้อความขยับ-------------*/
+             
+                .intro_text-2 {
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                .intro_text-2:hover {
+                    transform: translateY(-10px) scale(1.05);
+                }
                 
                
     /*-----------------outline----------------*/
@@ -1333,6 +1353,7 @@ h13 {
         
         .outline-container {
                     display: grid;
+                    justify-items: center;
                 }
         
                 .outline-container {
@@ -1363,6 +1384,7 @@ h13 {
                 }
         
                 .outline-year {
+                    width: 80%; 
                     background: #fffdfa;
                     border-radius: 10px;
                     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
@@ -1377,26 +1399,54 @@ h13 {
                     margin: 0 auto 15px;
                     border-radius: 10px;
                 }
-        
+                .outline-content{
+                    padding: 40px;
+                }
                 .outline-content h3 {
                     font-size: 6rem;
                     font-weight: bold;
                     text-align: center;
                     margin-bottom: 10px;
+                    color: #493e2b;
+                    
                 }
         
                 .outline-content h4 {
-                    font-size: 5rem;
+                    font-size: 3.5rem;
                     font-weight: bold;
                     margin-top: 10px;
-                    color: #7a6a4d;
+                    color: #493e2b;
+                }
+                .outline-content h6{
+                    font-size: 2.5rem;
+                    color: #493e2b;
+                    font-weight: 600;
                 }
         
                 .outline-content p {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     padding-left: 10px;
                     text-indent: -10px;
+                    color: #493e2b;
                 }
+                /*-----------ทำให้ภาพขยับได้----------*/
+                 .outline-img {
+                                    transition: transform 0.3s ease-in-out;
+                                }
+                
+                .outline-img:hover {
+                                    transform: translateY(-10px) scale(1.05);
+                                }
+                /*-------------ทำให้ข้อความขยับ-------------*/
+            
+                 .text-outline-top-2{
+                            transition: transform 0.3s ease-in-out;
+                        }
+            
+                .text-outline-top-2:hover {
+                            transform: translateY(-10px) scale(1.05);
+                        }
+            
     /*----------------curricurum-----------*/
                 .curriculum-container {
                 height: auto;
@@ -1460,6 +1510,7 @@ h13 {
             text-align: left;
             /* จัดข้อความชิดซ้าย */
             width: auto;
+            padding-left: 50px;
         }
         .text-curriculum-content{
             display: flex;
@@ -1469,7 +1520,7 @@ h13 {
                 /* จัดข้อความชิดซ้าย */
             width: auto;
           
-            padding-left: 10px;
+            padding-left: 70px;
 
         }
         .text-curriculum-content{
@@ -1542,21 +1593,23 @@ h13 {
                     color: #a39583;
                     /* ปรับให้เข้มขึ้นเพื่ออ่านง่ายขึ้น */
                     padding-top: 0px;
-                    padding-left: 10px;
+                    padding-left: 140px;
                     
                         
                 }
+               
                                 .book-corner {
                                     width: 70%;
                                     /* ปรับให้ยืดหยุ่นตามขนาดหน้าจอ */
+                                  
                                     max-width: 1000px;
                                     padding: 10px;
                                     margin: 10px auto;
-                                    display: block;
+                                   
                                     background-color: #A39583;
                                     /* สีพื้นหลัง */
                                     color: white;
-                                    text-align: center;
+                                    
                                     font-weight: bold;
                                 }
                 
@@ -1566,12 +1619,12 @@ h13 {
                                     max-width: 1000px;
                                     height: auto;
                                     /* ปรับให้ขนาดเหมาะสม */
-                                    display: block;
+                                   
                                     margin: 10px auto;
                                     background-color: #A39583;
                                     /* สีพื้นหลัง */
                                     color: white;
-                                    text-align: center;
+                                    
                                     padding: 15px;
                                 }
         
@@ -1605,8 +1658,8 @@ h13 {
             bottom: 20px;
             right: 20px;
             z-index: 1000;
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             background-color: #7d6b56;
             color: white;
             border: none;
@@ -1614,6 +1667,11 @@ h13 {
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+    
+        }
+        .bi-arrow-90deg-up{
+            width: 35px;
+            height: 35px;
         }
     
         #backToTop:hover {
@@ -1628,9 +1686,32 @@ h13 {
 
 
 
-/*------------------------------------*/
+/*------------------หน้าจอ 1441-1520 px------------------*/
+@media screen and (min-width: 1441px) and (max-width: 1520px) {
+    body{
+        height: auto;
+        width: 1520px;
 
 
+    }
+    .homepage{
+        height: 820px;
+    }
+   
+}
+
+@media screen and  (min-width: 1520px) {
+    body {
+        height: 1920px;
+        width: auto;
+
+
+    }
+    .homepage {
+        height: 820px;
+    }
+
+}
 
 
 
