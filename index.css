@@ -3,6 +3,7 @@ body {
     width: 1440px;
     height: auto;
     font-family: 'Prompt', sans-serif !important;
+    background-color: #fffdfa;
 }
 .navbar{
     background-color: #fffdfa;
@@ -276,7 +277,7 @@ body {
 .intro_text {
     font-family: 'Prompt', sans-serif;
     color: #fffdfa;
-    font-size: 60px;
+    font-size: 90px;
     font-weight: bold;
     padding-top: 30px;
     text-align: center;
