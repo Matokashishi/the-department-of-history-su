@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
 </head>
 
@@ -48,9 +51,9 @@
             </ul>
         </div>
     </nav>
-    
-    
-    
+
+
+
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -71,14 +74,14 @@
 
     </script>
     <!---------------- Homepage--------------------->
-    <div class="homepage scroll-up" >
+    <div class="homepage scroll-up">
 
-        
-        
+
+
         <div class="image-containe">
-            <img  src="pic/home/home2.png" alt="home2" class="home2">
+            <img  data-aos="flip-left" data-aos-duration="1000" src="pic/home/home2.png" alt="home2" class="home2" >
             <div class="text-container">
-                <h1>THE DEPARTMENT <br>OF HISTORY</h1>
+                <h1 class="animate__animated animate__fadeInUp">THE DEPARTMENT <br>OF HISTORY</h1>
                 <p class="subtitle">ภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์</p>
             </div>
         </div>
@@ -87,25 +90,31 @@
 
     <!----------------programs--------------------->
     <div class="programs "><a id="programs"></a>
-            <div class="text-box">
-               <div class="box scroll-up">
-                    <p class="content">
-                        หลักสูตรการศึกษาของภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์
-                        ระดับปริญญาตรี (หลักสูตรปรับปรุง พ.ศ. 2564)
-                        หน่วยกิตตลอดหลักสูตรขั้นต่ำ 145 หน่วย แบ่งเป็น <br><br>
-                        หมวดวิชาทั่วไป 30 หน่วยกิต <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับ 24 หน่วยกิต <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเลือก 6 หน่วยกิต <br><br>
-                        หมวดวิชาเฉพาะ 109 หน่วยกิต <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาพื้นฐานอักษร 13 หน่วยกิต <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาสาขาระดับต้นของคณะฯ 12 หน่วยกิต <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเอก 60 หน่วยกิต <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาโท 24 หน่วยกิต <br><br>
-                        หมวดวิชาเสรี 6 หน่วยกิต
-                    </p>
-                </div>
+        <div class="text-box" data-aos="fade-up" data-aos-duration="1000">
+            <div class="box scroll-up">
+                <p class="content">
+                    หลักสูตรการศึกษาของภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์
+                    ระดับปริญญาตรี (หลักสูตรปรับปรุง พ.ศ. 2564)
+                    หน่วยกิตตลอดหลักสูตรขั้นต่ำ 145 หน่วย แบ่งเป็น <br><br>
+                    หมวดวิชาทั่วไป 30 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับ
+                    24 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเลือก
+                    6 หน่วยกิต <br><br>
+                    หมวดวิชาเฉพาะ 109 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาพื้นฐานอักษร
+                    13 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาสาขาระดับต้นของคณะฯ
+                    12 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเอก
+                    60 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาโท
+                    24 หน่วยกิต <br><br>
+                    หมวดวิชาเสรี 6 หน่วยกิต
+                </p>
             </div>
-            <div class="camera">
+        </div>
+        <div class="camera">
             <div class="header">
                 <span>PROGRAM</span>
                 <span>PROGRAM</span>
@@ -114,12 +123,12 @@
             <div class="image-box">
                 <img src="pic/home/camera.PNG" class="camera">
             </div>
-            </div>
         </div>
+    </div>
     </div>
     <!----------------programs for smartphone--------------------->
     <div class="programs-2 "><a id="programs-2"></a>
-        <div class="text-box-2">
+        <div class="text-box-2" data-aos="fade-up" data-aos-duration="1000">
             <div class="box-2 scroll-up">
                 <p class="content-2 scroll-up">
                     หลักสูตรการศึกษาของภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์
@@ -153,64 +162,67 @@
                 <img src="pic/home/camera.PNG" class="camera">
             </div>
         </div>
-        
+
     </div>
 
     </div>
-    
+
     <!----------------intro--------------------->
-    <div class="intro scroll-up"> 
-       <h1 class="intro_text">INTRO</h1>
-       <br>
+    <div class="intro scroll-up" data-aos="fade-up" data-aos-duration="1000" >
+        <h1 class="intro_text">INTRO</h1>
+        <br>
         <div class="intro-content">
-            
-                <div class="col-md-4"> 
-                    <div class="icon"><img src="pic/intro/intro_icon1.PNG" alt="icon1">
-                    </div>
-                    <h5 >ชั้นปีที่ 1</h5><br>
-                    <h7>จะเน้นเรียนหมวดวิชาทั่วไป รายวิชาพื้นฐานของคณะ<br>(หมวดวิชาเฉพาะ) เเละรายวิชาสาขาระดับต้น</h7>
-                    
+
+            <div class="col-md-4">
+                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000" src="pic/intro/intro_icon1.PNG" alt="icon1">
                 </div>
-                <div class="col-md-4"> 
-                    <div class="icon"><img src="pic/intro/intro_icon2.PNG" alt="icon2"></div>
-                    <h5 >ชั้นปีที่ 2-3</h5><br>
-                    <h7>เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไป<br>อยู่บ้างเเละเรียนวิชาสาขาระดับต้น หรือพวกกลุ่มวิชาเสรี
+                <h5>ชั้นปีที่ 1</h5><br>
+                <h7>จะเน้นเรียนหมวดวิชาทั่วไป รายวิชาพื้นฐานของคณะ<br>(หมวดวิชาเฉพาะ) เเละรายวิชาสาขาระดับต้น</h7>
+
+            </div>
+            <div class="col-md-4">
+                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon2.PNG" alt="icon2"></div>
+                <h5>ชั้นปีที่ 2-3</h5><br>
+                <h7>เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไป<br>อยู่บ้างเเละเรียนวิชาสาขาระดับต้น
+                    หรือพวกกลุ่มวิชาเสรี
                     เมื่อปี 3 จะมี<br>การเรียนวิชาบังคับเลือกเป็นส่วนใหญ่ เเละเรียนรายวิชาโท</h7>
-                </div>
-                <div class="col-md-4"> 
-                    <div class="icon"><img src="pic/intro/intro_icon3.PNG" alt="icon3"></div>
-                    <h5 >ชั้นปีที่ 4</h5><br>
-                    <h7>วิชาบังคับเลือกเอกตามความสนใจ
+            </div>
+            <div class="col-md-4">
+                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon3.PNG" alt="icon3"></div>
+                <h5>ชั้นปีที่ 4</h5><br>
+                <h7>วิชาบังคับเลือกเอกตามความสนใจ
                     เเละรายวิชาโท</h7>
-                    
-                </div>
+
+            </div>
 
         </div>
-       
+
     </div>
     <!----------------intro for smartphone--------------------->
     <div class="intro-2 scroll-up">
         <h2 class="intro_text-2 scroll-up">INTRO</h2>
         <div class="intro-content-2 scroll-up">
-    
+
             <div class="col-md-4">
-                <div class="icon-2-1 scroll-up"><img src="pic/intro/intro_icon1.PNG" alt="icon1" class="icon-img scroll-up">
+                <div class="icon-2-1 scroll-up"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon1.PNG" alt="icon1"
+                        class="icon-img scroll-up">
                 </div>
                 <h5 class="icon-text-1 scroll-up">ชั้นปีที่ 1</h5><br>
                 <h7 class="icon-text-1 scroll-up">จะเน้นเรียนหมวดวิชาทั่วไป
                     รายวิชาพื้นฐานของคณะ<br>(หมวดวิชาเฉพาะ)
                     เเละรายวิชาสาขาระดับต้น</h7>
-    
+
             </div>
             <div class="col-md-4">
-                <div class="icon-2-2"><img src="pic/intro/intro_icon2.PNG" alt="icon2" class="icon-img scroll-up"></div>
+                <div class="icon-2-2"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon2.PNG" alt="icon2" class="icon-img scroll-up"></div>
                 <h5 class="icon-text-2 scroll-up">ชั้นปีที่ 2-3</h5><br>
-                <h7 class="icon-text-2 scroll-up">เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไปอยู่บ้างเเละเรียนวิชาสาขาระดับต้น
+                <h7 class="icon-text-2 scroll-up">
+                    เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไปอยู่บ้างเเละเรียนวิชาสาขาระดับต้น
                     หรือพวกกลุ่มวิชาเสรี
                     เมื่อปี 3 จะมีการเรียนวิชาบังคับเลือกเป็นส่วนใหญ่ เเละเรียนรายวิชาโท</h7>
             </div>
             <div class="col-md-4">
-                <div class="icon-2-3"><img src="pic/intro/intro_icon3.PNG" alt="icon3" class="icon-img scroll-up"></div>
+                <div class="icon-2-3"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon3.PNG" alt="icon3" class="icon-img scroll-up"></div>
                 <h5 class="icon-text-3 scroll-up">ชั้นปีที่ 4</h5><br>
                 <h7 class="icon-text-3 scroll-up">วิชาบังคับเลือกเอกตามความสนใจ
                     เเละรายวิชาโท</h7>
@@ -218,48 +230,54 @@
             <br>
             <br>
         </div>
-   
+
     </div>
 
+    
     <!----------------outline--------------------->
-    <div class="outline scroll-up"><a id="outline"></a> 
+    <div class="outline scroll-up"><a id="outline"></a>
         <div class="outlinerow1">
             <div class="col-md-6">
-                <div class="text-outline-top"><h2>COURSE<br>OUTLINE</h2></div>
+                <div class="text-outline-top">
+                    <h2>COURSE<br>OUTLINE</h2>
+                </div>
             </div>
             <div class="col-md-6">
-                
+    
                 <div class="text-outline-content">
                     <h8>แผนการเรียนเอกประวัติศาสตร์</h8><br>
                     <h9>ภาควิชาประวัติศาสตร์จะเเบ่งหมวดหมู่วิชาบังคับเอกออกเป็น 3 กลุ่ม<br>
-                กลุ่มรายวิชาพื้นที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กลุ่มรายวิชาพินิจ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กลุ่มรายวิชาทักษะ</h9>
+                        กลุ่มรายวิชาพื้นที่&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กลุ่มรายวิชาพินิจ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;กลุ่มรายวิชาทักษะ
+                    </h9>
                 </div>
             </div>
         </div>
         <br>
         <div class="outlinerow2 scroll-up">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <!--  ฝั่งซ้าย (รูปภาพ) -->
                 <div class="left-section">
-                    <img src="pic/outline/1.png" class="outlinetwo" width="70%">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/outline/1.png" class="outlinetwo"
+                        width="70%">
                 </div>
-            
+    
                 <!-- ฝั่งขวา (ข้อมูลหลักสูตร) -->
                 <div class="right-section">
-                    <div class="title">ชั้นปีที่ 1</div>
-            
-                    <div class="semester">
+                    <div class="title" data-aos="fade-up">ชั้นปีที่ 1</div>
+    
+                    <div class="semester" data-aos="fade-up">
                         <h3>ภาคการศึกษาที่ 1</h3>
                         <ul>
                             <p>&nbsp;&nbsp;&nbsp;&nbsp;• ควรเลือกเรียนหมวดวิชาทั่วไปหรือวิชาเฉพาะก่อน</p>
-                            </ul>
+                        </ul>
                         </ul>
                     </div>
-            
-                    <div class="semester">
+    
+                    <div class="semester" data-aos="fade-up">
                         <h3>ภาคการศึกษาที่ 2</h3>
                         <ul>
-                            <h10>วิชาสาขาระดับต้น<h10> <br><p>&nbsp;&nbsp;&nbsp;&nbsp;• 415 101 ประวัติศาสตร์ของไทยและประเทศในอาเซียน</p>
+                            <h10>วิชาสาขาระดับต้น<h10> <br>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;• 415 101 ประวัติศาสตร์ของไทยและประเทศในอาเซียน</p>
                         </ul>
                     </div>
                 </div>
@@ -269,34 +287,36 @@
         <br>
         <br>
         <div class="outlinerow3 scroll-up">
-            <div class="container-two">
-                
+            <div class="container-two" data-aos="fade-up" data-aos-duration="1000">
+    
                 <div class="left-section-two">
-                    <div class="title-two">ชั้นปีที่ 2</div>
-                    
-                    <div class="semester-two">
+                    <div class="title-two" data-aos="fade-up">ชั้นปีที่ 2</div>
+    
+                    <div class="semester-two" data-aos="fade-up">
                         <h3>ภาคการศึกษาที่ 1</h3>
                         <ul>
                             <h10>วิชาสาขาระดับต้น<h10> <br>
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;• 415 102 เหตุการณ์ปัจจุบันในปริทรรศน์ประวัติศาสตร์</p>
                         </ul>
-                        
+    
                     </div>
-                    
-                    <div class="semester-two">
+    
+                    <div class="semester-two" data-aos="fade-up">
                         <h3>ภาคการศึกษาที่ 2</h3>
                         <ul>
                             <h10>วิชาบังคับเอก<h10> <br>
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;• 415 201 ประวัติศาสตร์ไทยก่อนสมัยใหม่<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;• 415 202 ประวัติศาสตร์เอเชียตะวันออกเฉียงใต้ก่อนสมัยใหม่<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;• 415 203 ประวัติศาสตร์เอเชียในยุคจักรวรรดินิยม<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;• 415 204 ประวัติศาสตร์ยุโรปยุคสมัยใหม่ตอนต้น</p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;• 415 202
+                                        ประวัติศาสตร์เอเชียตะวันออกเฉียงใต้ก่อนสมัยใหม่<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;• 415 203 ประวัติศาสตร์เอเชียในยุคจักรวรรดินิยม<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;• 415 204 ประวัติศาสตร์ยุโรปยุคสมัยใหม่ตอนต้น</p>
                         </ul>
                     </div>
                 </div>
-                    
+    
                 <div class="right-section-two">
-                    <img src="pic/outline/year2-edit.png" class="outlinetwo" width="70%">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/outline/year2-edit.png" class="outlinetwo"
+                        width="70%">
                 </div>
             </div>
         </div>
@@ -304,38 +324,45 @@
         <br>
         <br>
         <div class="outlinerow4 scroll-up">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <!--  ฝั่งซ้าย (รูปภาพ) -->
                 <div class="left-section">
-                    <img src="pic/outline/year3-edit.png" class="outlinetwo" width="90%">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/outline/year3-edit.png" class="outlinetwo"
+                        width="90%">
                 </div>
-            
+    
                 <!-- ฝั่งขวา (ข้อมูลหลักสูตร) -->
                 <div class="right-section">
-                    <div class="title">ชั้นปีที่ 3</div>
-            
-                    <div class="semester">
+                    <div class="title" data-aos="fade-up">ชั้นปีที่ 3</div>
+    
+                    <div class="semester" data-aos="fade-up">
                         <h3>ภาคการศึกษาที่ 1</h3>
                         <ul>
                             <h10>วิชาบังคับเอก<h10> <br>
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;• 415 301 มรดกทางวัฒนธรรมและความคิดของไทย<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;• 415 302 มรดกทางวัฒนธรรมและความคิดในเอเชีย<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;• 415 401 ปรัชญาประวัติศาสตร์และระเบียบวิธีทาง<br>&nbsp;&nbsp;&nbsp;&nbsp;ประวัติศาสตร์</p>
-                            <h10>วิชาบังคับเลือก<h10> <br>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;• เลือกเรียนวิชาบังคับเลือกตามความสนใจขั้นต่ำ 3 หน่วยกิต</p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;• 415 401
+                                        ปรัชญาประวัติศาสตร์และระเบียบวิธีทาง<br>&nbsp;&nbsp;&nbsp;&nbsp;ประวัติศาสตร์</p>
+                                    <h10>วิชาบังคับเลือก<h10> <br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;• เลือกเรียนวิชาบังคับเลือกตามความสนใจขั้นต่ำ 3
+                                                หน่วยกิต</p>
                         </ul>
                         </ul>
                     </div>
-            
-                    <div class="semester">
+    
+                    <div class="semester" data-aos="fade-up">
                         <h3>ภาคการศึกษาที่ 2</h3>
                         <ul>
                             <h10>วิชาบังคับเอก<h10> <br>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;• 415 303 ความคิดและวัฒนธรรมตะวันตกในกระแสโลกหลัง<br>&nbsp;&nbsp;&nbsp;&nbsp;สงครามโลกครั้งที่ 1<br>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;• 415 303
+                                        ความคิดและวัฒนธรรมตะวันตกในกระแสโลกหลัง<br>&nbsp;&nbsp;&nbsp;&nbsp;สงครามโลกครั้งที่
+                                        1<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;• 415 304 ประวัติศาสตร์กับการท่องเที่ยว<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;• 415 402 ประวัติศาสตร์นิพนธ์<br>&nbsp;&nbsp;&nbsp;&nbsp;• 415 451 การศึกษาเอกเทศ 1</p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;• 415 402 ประวัติศาสตร์นิพนธ์<br>&nbsp;&nbsp;&nbsp;&nbsp;•
+                                        415 451 การศึกษาเอกเทศ 1</p>
                                     <h10>วิชาบังคับเลือก<h10> <br>
-                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;• เลือกเรียนวิชาบังคับเลือกตามความสนใจขั้นต่ำ 3 หน่วยกิต</p>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;• เลือกเรียนวิชาบังคับเลือกตามความสนใจขั้นต่ำ 3
+                                                หน่วยกิต</p>
                         </ul>
                     </div>
                 </div>
@@ -345,23 +372,24 @@
         <br>
         <br>
         <div class="outlinerow5 scroll-up">
-            <div class="container-two">
-            
+            <div class="container-two" data-aos="fade-up" data-aos-duration="1000">
+    
                 <div class="left-section-two">
-                    <div class="title-two">ชั้นปีที่ 4</div>
-            
-                    <div class="semester-two">
+                    <div class="title-two" data-aos="fade-up">ชั้นปีที่ 4</div>
+    
+                    <div class="semester-two" data-aos="fade-up">
                         <h3>ภาคการศึกษาที่ 1</h3>
                         <ul>
                             <h10>วิชาบังคับเอก<h10> <br>
                                     <p>&nbsp;&nbsp;&nbsp;&nbsp;• 415 452 การศึกษาเอกเทศ 2</p>
-                            <h10>วิชาบังคับเลือก<h10> <br>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;• เลือกเรียนวิชาบังคับเลือกตามความสนใจขั้นต่ำ 9 หน่วยกิต</p>
+                                    <h10>วิชาบังคับเลือก<h10> <br>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;• เลือกเรียนวิชาบังคับเลือกตามความสนใจขั้นต่ำ 9
+                                                หน่วยกิต</p>
                         </ul>
-            
+    
                     </div>
-            
-                    <div class="semester-two">
+    
+                    <div class="semester-two" data-aos="fade-up">
                         <h3>ภาคการศึกษาที่ 2</h3>
                         <ul>
                             <h10>วิชาบังคับเลือก<h10> <br>
@@ -369,29 +397,31 @@
                         </ul>
                     </div>
                 </div>
-            
+    
                 <div class="right-section-two">
-                    <img src="pic/outline/year4-2-edit.png" class="outlinetwo" width="70%">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/outline/year4-2-edit.png" class="outlinetwo"
+                        width="70%">
                 </div>
             </div>
         </div>
-        </div>
-<div class="br">
-    <br>
-    <br>
-</div>
+    </div>
+    <div class="br">
+        <br>
+        <br>
+    </div>
+   
 <!------------------ouline for smartphone----------------------------->
 <div class="outline-container scroll-up"><a id="outline-container"></a>
-    <div class="outline-header">
+    <div class="outline-header" data-aos-duration="1000">
         <h2 class="text-outline-top-2">COURSE<br>OUTLINE</h2>
         <p>แผนการเรียนเอกประวัติศาสตร์</p>
         <p>ภาควิชาประวัติศาสตร์จะเเบ่งหมวดหมู่วิชาบังคับเอกออกเป็น 3 กลุ่ม</p>
-        <p>กลุ่มรายวิชาพื้นที่  กลุ่มรายวิชาพินิจ  กลุ่มรายวิชาทักษะ</p>
+        <p>กลุ่มรายวิชาพื้นที่ กลุ่มรายวิชาพินิจ กลุ่มรายวิชาทักษะ</p>
     </div>
     <br>
     <br>
     <div class="outline-year scroll-up">
-        <img src="pic/outline/1.png" class="outline-img" width="70%">
+        <img data-aos="flip-left" data-aos-duration="1000" src="pic/outline/1.png" class="outline-img" width="70%">
         <div class="outline-content scroll-up">
             <h3>ชั้นปีที่ 1</h3>
             <br>
@@ -406,7 +436,8 @@
     <br>
     <br>
     <div class="outline-year scroll-up">
-        <img src="pic/outline/year2-edit.png" class="outline-img" width="70%">
+        <img data-aos="flip-left" data-aos-duration="2000" src="pic/outline/year2-edit.png" class="outline-img"
+            width="70%">
         <div class="outline-content scroll-up">
             <h3>ชั้นปีที่ 2</h3>
             <br>
@@ -420,13 +451,14 @@
             <p>• 415 202 ประวัติศาสตร์เอเชียตะวันออกเฉียงใต้ก่อนสมัยใหม่</p>
             <p>• 415 203 ประวัติศาสตร์เอเชียในยุคจักรวรรดินิยม</p>
             <p>• 415 204 ประวัติศาสตร์ยุโรปยุคสมัยใหม่ตอนต้น</p>
-            
+
         </div>
     </div>
     <br>
     <br>
     <div class="outline-year scroll-up">
-        <img src="pic/outline/year3-edit.png" class="outline-img" width="70%">
+        <img data-aos="flip-right" data-aos-duration="4000" src="pic/outline/year3-edit.png" class="outline-img"
+            width="70%">
         <div class="outline-content scroll-up">
             <h3>ชั้นปีที่ 3</h3>
             <br>
@@ -451,7 +483,8 @@
     <br>
     <br>
     <div class="outline-year scroll-up">
-        <img src="pic/outline/year4-2-edit.png" class="outline-img" width="70%">
+        <img data-aos="flip-left" data-aos-duration="5000" src="pic/outline/year4-2-edit.png" class="outline-img"
+            width="70%">
         <div class="outline-content scroll-up">
             <h3>ชั้นปีที่ 4</h3>
             <br>
@@ -473,498 +506,562 @@
 
 
 
+
 <!----------------curriculum--------------------->
-<div class="curriculum scroll-up"><a id="curriculum"></a> 
-    <div class="outlinerow1">
-        <div class="col-md-6">
-            <div class="text-cur-top">
-                <h2>Curriculum</h2>
+    <div class="curriculum scroll-up"><a id="curriculum"></a>
+        <div class="outlinerow1">
+            <div class="col-md-6">
+                <div class="text-cur-top">
+                    <h2>Curriculum</h2>
+                </div>
+                <div class="text-curriculum-content">
+
+                    <h9>ภาควิชาประวัติศาสตร์จะเเบ่งหมวดหมู่วิชาเลือกออกเป็น 3 กลุ่ม<br>
+                        กลุ่มรายวิชาพื้นที่ กลุ่มรายวิชาพินิจ กลุ่มรายวิชาทักษะ
+                    </h9>
+                </div>
+                <br>
             </div>
-            <div class="text-curriculum-content">
-            
-                <h9>ภาควิชาประวัติศาสตร์จะเเบ่งหมวดหมู่วิชาเลือกออกเป็น 3 กลุ่ม<br>
-                    กลุ่มรายวิชาพื้นที่ กลุ่มรายวิชาพินิจ กลุ่มรายวิชาทักษะ
-                </h9>
+            <div class="col-md-6">
+                <img src="pic/subjects/sub3.PNG" class="subjects" width="100%">
             </div>
+        </div>
         <br>
-        </div>
-        <div class="col-md-6">
-            <img src="pic/subjects/sub3.PNG" class="subjects" width="100%">
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="curriculum-container scroll-up">
-        <!-- กลุ่มรายวิชาพื้นที่ -->
-        <div class="curriculum-column">
-            <button class="collapsible">กลุ่มรายวิชาพื้นที่</button>
-            <div class="collapsible-content">
-                <button class="collapsible">415 211 ประวัติศาสตร์ไทยสมัยใหม่</button>
+        <br>
+        <div class="curriculum-container scroll-up">
+            <!-- กลุ่มรายวิชาพื้นที่ -->
+            <div class="curriculum-column" data-aos="fade-up"  data-aos-duration="1000">
+                <button class="collapsible">กลุ่มรายวิชาพื้นที่</button>
                 <div class="collapsible-content">
-                    <p>พัฒนาการของไทยตั้งแต่สมัยสัญญาบาวริ่งถึงวิกฤตเศรษฐกิจ 2540</p>
+                    <button class="collapsible">415 211 ประวัติศาสตร์ไทยสมัยใหม่</button>
+                    <div class="collapsible-content">
+                        <p>พัฒนาการของไทยตั้งแต่สมัยสัญญาบาวริ่งถึงวิกฤตเศรษฐกิจ 2540</p>
+                    </div>
+                    <button class="collapsible">415 212 ประวัติศาสตร์สุโขทัย</button>
+                    <div class="collapsible-content">
+                        <p>กำเนิดและพัฒนาการของอาณาจักรสุโขทัยจนถึงศตวรรษที่ 14</p>
+                    </div>
+                    <button class="collapsible">415 213 ประวัติศาสตร์อยุธยา</button>
+                    <div class="collapsible-content">
+                        <p>การก่อตั้ง การปกครอง ความสัมพันธ์ต่างชาติ และการล่มสลายของอยุธยา</p>
+                    </div>
+                    <button class="collapsible">415 214 ประวัติศาสตร์ล้านนา</button>
+                    <div class="collapsible-content">
+                        <p>การก่อตั้งและพัฒนาการของอาณาจักรล้านนา ความสัมพันธ์กับอาณาจักรต่างๆ รวมถึงพม่าฯ</p>
+                    </div>
+                    <button class="collapsible">415 215 ประวัติศาสตร์อีสาน</button>
+                    <div class="collapsible-content">
+                        <p>พัฒนาการของชุมชนอีสาน ตั้งแต่ยุคก่อนประวัติศาสตร์จนถึงปัจจุบัน
+                            ความสัมพันธ์กับศูนย์อำนาจในลุ่มแม่น้ำโขงและเจ้าพระยา</p>
+                    </div>
+                    <button class="collapsible">415 216 ประวัติศาสตร์ภาคใต้ของไทย</button>
+                    <div class="collapsible-content">
+                        <p>พัฒนาการของชุมชนภาคใต้และปัญหาความไม่สงบในพื้นที่ชายแดนภาคใต้ </p>
+                    </div>
+                    <button class="collapsible">415 217 ประวัติศาสตร์ภูมิภาคตะวันตกของไทย </button>
+                    <div class="collapsible-content">
+                        <p>การพัฒนาและความหลากหลายทางชาติพันธุ์ในภูมิภาคตะวันตก
+                            รวมถึงบทบาทในการท่องเที่ยวเชิงประวัติศาสตร์</p>
+                    </div>
+                    <button class="collapsible">415 218 ประวัติศาสตร์เอเชียตะวันออกเฉียงใต้ยุคอาณานิคม </button>
+                    <div class="collapsible-content">
+                        <p>การเข้าครอบครองดินแดนในเอเชียตะวันออกเฉียงใต้โดยชาติอาณานิคมตะวันตก
+                            การปฏิรูปการปกครองและผลกระทบต่อสังคม</p>
+                    </div>
+                    <button class="collapsible">415 219 ประวัติศาสตร์เอเชียตะวันออกเฉียงใต้ยุคปัจจุบัน </button>
+                    <div class="collapsible-content">
+                        <p>
+                            การพัฒนารัฐชาติสมัยใหม่หลังสงครามโลกครั้งที่ 2 ความขัดแย้งในภูมิภาคและบทบาทในเวทีการเมืองโลก
+                        </p>
+                    </div>
+                    <button class="collapsible">415 220 ประวัติศาสตร์เอเชียตะวันออกก่อนสมัยใหม่</button>
+                    <div class="collapsible-content">
+                        <p>ประวัติศาสตร์จีน ญี่ปุ่น และเกาหลีตั้งแต่เริ่มยุคประวัติศาสตร์
+                            จนถึงการพัฒนาในสังคมและการปกครอง</p>
+                    </div>
+                    <button class="collapsible">415 221 ประวัติศาสตร์เอเชียใต้ก่อนสมัยใหม่ </button>
+                    <div class="collapsible-content">
+                        <p>
+                            ประวัติศาสตร์ของอนุทวีปอินเดียและศรีลังกาก่อนคริสต์ศตวรรษที่ 18 การพัฒนาทางการเมืองและศาสนา
+                        </p>
+                    </div>
+                    <button class="collapsible">415 222 ประวัติศาสตร์ตะวันออกกลาง </button>
+                    <div class="collapsible-content">
+                        <p>
+                            การก่อตั้งจักรวรรดิอิสลาม การขยายตัวของจักรวรรดิออตโตมัน และการพัฒนาของชาติในตะวันออกกลาง
+                        </p>
+                    </div>
+                    <button class="collapsible">415 223 ประวัติศาสตร์ประเทศแถบเทือกเขาหิมาลัย </button>
+                    <div class="collapsible-content">
+                        <p>
+                            ประวัติศาสตร์ของประเทศต่างๆ ในแถบเทือกเขาหิมาลัย รวมถึงการเมือง เศรษฐกิจ
+                            และความสัมพันธ์ระหว่างประเทศ</p>
+                    </div>
+                    <button class="collapsible">415 224 415 224 ประวัติศาสตร์อินเดียสมัยใหม่
+                    </button>
+                    <div class="collapsible-content">
+                        <p>
+                            การเข้าครอบครองอินเดียโดยอังกฤษ
+                            การเคลื่อนไหวเพื่อเอกราชและการแบ่งแยกประเทศอินเดียและปากีสถาน</p>
+                    </div>
+                    <button class="collapsible">415 225 ประวัติศาสตร์จีนสมัยใหม่
+
+                    </button>
+                    <div class="collapsible-content">
+                        <p>
+                            การปฏิรูปและการสร้างรัฐคอมมิวนิสต์ในจีน การเปลี่ยนแปลงทางการเมืองหลังสงครามโลกครั้งที่ 2</p>
+                    </div>
+                    <button class="collapsible">415 226 ประวัติศาสตร์ญี่ปุ่นสมัยใหม่
+                    </button>
+                    <div class="collapsible-content">
+                        <p>
+                            การเจริญเติบโตทางเศรษฐกิจ การฟื้นฟูญี่ปุ่นหลังสงครามโลกครั้งที่ 2 และบทบาทในเวทีการเมืองโลก
+                        </p>
+                    </div>
+                    <button class="collapsible">415 227 ประวัติศาสตร์ออสเตรเลีย </button>
+                    <div class="collapsible-content">
+                        <p>
+                            การก่อตั้งออสเตรเลีย การพัฒนาของการเกษตรและอุตสาหกรรม และบทบาทในสงครามโลก</p>
+                    </div>
+                    <button class="collapsible">415 228 ประวัติศาสตร์กรีกและโรมัน</button>
+                    <div class="collapsible-content">
+                        <p>การพัฒนาของนครรัฐกรีกและจักรวรรดิโรมัน การเผยแผ่คริสต์ศาสนาและการเสื่อมสลายของจักรวรรดิโรมัน
+                        </p>
+                    </div>
+                    <button class="collapsible">415 229 ประวัติศาสตร์ยุโรปสมัยกลาง</button>
+                    <div class="collapsible-content">
+                        <p>การเปลี่ยนแปลงทางสังคมยุโรปจากการรุกรานของอนารยชน การฟื้นฟูศิลปวิทยาการ
+                            และการก่อตัวของรัฐชาติ</p>
+                    </div>
+                    <button class="collapsible">415 230 ประวัติศาสตร์ยุโรปคริสต์ศตวรรษที่ 19</button>
+                    <div class="collapsible-content">
+                        <p>การปฏิวัติอุตสาหกรรม การรวมชาติของอิตาลีและเยอรมนี และการพัฒนาของระบอบประชาธิปไตย</p>
+                    </div>
+                    <button class="collapsible">415 231 ประวัติศาสตร์ยุโรปคริสต์ศตวรรษที่ 20</button>
+                    <div class="collapsible-content">
+                        <p>ยุโรปในช่วงสงครามโลกครั้งที่ 1-2 การเผชิญหน้าของประเทศอภิมหาอำนาจ
+                            และการล่มสลายของระบอบคอมมิวนิสต์</p>
+                    </div>
+                    <button class="collapsible">415 232 ประวัติศาสตร์สหราชอาณาจักร</button>
+                    <div class="collapsible-content">
+                        <p>การพัฒนาการทางการเมืองและเศรษฐกิจของอังกฤษ การปฏิวัติอุตสาหกรรม และบทบาทในสงครามโลก</p>
+                    </div>
+                    <button class="collapsible">415 233 ประวัติศาสตร์ฝรั่งเศสสมัยใหม่</button>
+                    <div class="collapsible-content">
+                        <p>ประวัติศาสตร์ฝรั่งเศสในสมัยนโปเลียน การปฏิวัติ 1830 และ 1848 และบทบาทในสหภาพยุโรป</p>
+                    </div>
+                    <button class="collapsible">415 234 ประวัติศาสตร์เยอรมันสมัยใหม่</button>
+                    <div class="collapsible-content">
+                        <p>การก่อตั้งจักรวรรดิเยอรมนี การรวมชาติ เยอรมนีในช่วงสงครามโลกครั้งที่ 1 และ 2</p>
+                    </div>
+                    <button class="collapsible">415 235 ประวัติศาสตร์รัสเซีย</button>
+                    <div class="collapsible-content">
+                        <p>พัฒนาการของรัสเซียตั้งแต่สมัยโรมานอฟ จนถึงการล่มสลายของสหภาพโซเวียตและรัสเซียในปัจจุบัน</p>
+                    </div>
+                    <button class="collapsible">415 236 ประวัติศาสตร์อเมริกา</button>
+                    <div class="collapsible-content">
+                        <p>การพัฒนาเศรษฐกิจและการปกครองของอเมริกาจากยุคอาณานิคมจนถึงปัจจุบัน
+                            โดยเน้นการสร้างชาติและสงครามกลางเมือง</p>
+                    </div>
+                    <button class="collapsible">415 237 ประวัติศาสตร์ดินแดนในบริเวณลุ่มแม่น้ำโขงก่อนสมัยใหม่</button>
+                    <div class="collapsible-content">
+                        <p>การศึกษาการเกิดชุมชนเมืองและการก่อตัวของอาณาจักรในลุ่มแม่น้ำโขง, การเปลี่ยนแปลงทางการเมือง
+                            เศรษฐกิจ สังคม และวัฒนธรรม,
+                            ความสัมพันธ์ระหว่างรัฐในพื้นที่นี้ รวมถึงอิทธิพลจากภายนอกจนถึงยุคอาณานิคม</p>
+                    </div>
                 </div>
-                <button class="collapsible">415 212 ประวัติศาสตร์สุโขทัย</button>
+            </div>
+
+            <!-- กลุ่มรายวิชาพินิจ -->
+            <div class="curriculum-column" data-aos="fade-up"  data-aos-duration="1000">
+                <button class="collapsible">กลุ่มรายวิชาพินิจ</button>
                 <div class="collapsible-content">
-                    <p>กำเนิดและพัฒนาการของอาณาจักรสุโขทัยจนถึงศตวรรษที่ 14</p>
+                    <button class="collapsible">415 311 ประวัติศาสตร์การเมืองการปกครองไทย</button>
+                    <div class="collapsible-content">
+                        <p>ศึกษาอิทธิพลของความเชื่อที่มีต่อการเมืองการปกครองในไทย ตั้งแต่ลัทธิอินดูและพุทธศาสนา
+                            ไปจนถึงอิทธิพลจากตะวันตกที่มีผลต่อการพัฒนาความคิดทางการเมืองและเหตุการณ์สำคัญทางการเมืองไทย
+                        </p>
+                    </div>
+                    <button class="collapsible">415 312 ประวัติศาสตร์เศรษฐกิจและสังคมไทย</button>
+                    <div class="collapsible-content">
+                        <p>ศึกษาระบบไพร่ ความสัมพันธ์ทางสังคมในไทย
+                            และการพัฒนาเศรษฐกิจตั้งแต่สมัยอยุธยาจนถึงวิกฤตเศรษฐกิจปี 2540</p>
+                    </div>
+                    <button class="collapsible">415 313 ประวัติศาสตร์ความสัมพันธ์ของไทยกับต่างประเทศ</button>
+                    <div class="collapsible-content">
+                        <p>การศึกษาความสัมพันธ์ระหว่างไทยและต่างประเทศตั้งแต่สมัยสุโขทัย
+                            บทบาทของชาติตะวันตกและปัจจัยทางการเมืองและเศรษฐกิจโลกที่มีอิทธิพลต่อนโยบายต่างประเทศของไทย
+                        </p>
+                    </div>
+                    <button class="collapsible">415 314 ความคิดและคติความเชื่อในสังคมไทย</button>
+                    <div class="collapsible-content">
+                        <p>ศึกษาแนวคิดและคติความเชื่อในสังคมไทยตั้งแต่สมัยสุโขทัยจนถึงปัจจุบัน
+                            รวมถึงทัศนคติและโลกทัศน์ที่มีอิทธิพลต่อวิถีชีวิตของคนไทย</p>
+                    </div>
+                    <button class="collapsible">415 315 ขบวนการคอมมิวนิสต์ในเอเชียตะวันออกเฉียงใต้</button>
+                    <div class="collapsible-content">
+                        <p>การศึกษาเกี่ยวกับลัทธิคอมมิวนิสต์ในเอเชียตะวันออกเฉียงใต้
+                            การเติบโตและบทบาทของขบวนการคอมมิวนิสต์ในการต่อสู้เพื่อเอกราชและสร้างชาติ</p>
+                    </div>
+                    <button class="collapsible">415 316 ชาวจีนโพ้นทะเลในเอเชียตะวันออกเฉียงใต้</button>
+                    <div class="collapsible-content">
+                        <p>ประวัติการอพยพของชาวจีนเข้าสู่เอเชียตะวันออกเฉียงใต้และบทบาทของชาวจีนโพ้นทะเลในเศรษฐกิจ
+                            การเมือง
+                            และสังคมตั้งแต่ศตวรรษที่ 17</p>
+                    </div>
+                    <button class="collapsible">415 317 แบบแผนจารีตและความเป็นสมัยใหม่ในเอเชียตะวันออกเฉียงใต้</button>
+                    <div class="collapsible-content">
+                        <p>การวิเคราะห์การเปลี่ยนแปลงทางสังคม วัฒนธรรม
+                            และวิถีชีวิตในเอเชียตะวันออกเฉียงใต้ตั้งแต่ก่อนคริสต์ศตวรรษที่ 19
+                            จนถึงกระบวนการทำให้ทันสมัยและปรับตัวต่อกระแสโลกาภิวัตน์ในศตวรรษที่ 20</p>
+                    </div>
+                    <button class="collapsible">415 318 เอเชียกับเศรษฐกิจการเมืองโลก</button>
+                    <div class="collapsible-content">
+                        <p>การวิเคราะห์สถานภาพและบทบาทของเอเชียในเศรษฐกิจและการเมืองโลก
+                            รวมถึงความร่วมมือและความขัดแย้งในภูมิภาคต่าง ๆ</p>
+                    </div>
+                    <button class="collapsible">415 319 สหรัฐอเมริกากับการเมืองโลก</button>
+                    <div class="collapsible-content">
+                        <p>ศึกษานโยบายต่างประเทศของสหรัฐอเมริกา ตั้งแต่ก่อนสงครามโลกครั้งที่ 2
+                            และการเป็นอภิมหาอำนาจหลังสงครามโลกครั้งที่ 2
+                            รวมถึงบทบาทของสหรัฐอเมริกาในสงครามเย็นและในปัจจุบัน</p>
+                    </div>
+                    <button class="collapsible">415 320 ประวัติศาสตร์ความคิด</button>
+                    <div class="collapsible-content">
+                        <p>ศึกษาความหมายและพัฒนาการของประวัติศาสตร์ความคิด
+                            รวมถึงการเปลี่ยนแปลงของความคิดและโลกทัศน์ของมนุษย์ในแต่ละช่วงเวลา</p>
+                    </div>
+                    <button class="collapsible">415 321 การปฏิวัติในประวัติศาสตร์โลก</button>
+                    <div class="collapsible-content">
+                        <p>การศึกษาและวิเคราะห์เหตุการณ์ปฏิวัติที่สำคัญในประวัติศาสตร์โลก โดยเปรียบเทียบสาเหตุ รูปแบบ
+                            และผลกระทบของการปฏิวัติ</p>
+                    </div>
+                    <button class="collapsible">415 322 ประวัติศาสตร์ในภาพยนตร์</button>
+                    <div class="collapsible-content">
+                        <p>การวิเคราะห์ข้อเท็จจริงและประเด็นสำคัญทางประวัติศาสตร์ที่ถ่ายทอดในภาพยนตร์
+                            รวมถึงการพิจารณาวิถีชีวิตและวัฒนธรรมจากภาพยนตร์</p>
+                    </div>
+                    <button class="collapsible">415 323 ประวัติศาสตร์ผ่านสื่อร่วมสมัย</button>
+                    <div class="collapsible-content">
+                        <p>การสร้างเนื้อหาประวัติศาสตร์เพื่อเผยแพร่ผ่านสื่อร่วมสมัย เช่น
+                            สื่อสิ่งพิมพ์และสื่ออิเล็กทรอนิกส์</p>
+                    </div>
+                    <button class="collapsible">415 324 เอเชียสมัยสงครามเย็น</button>
+                    <div class="collapsible-content">
+                        <p>การศึกษาเอเชียในช่วงสงครามเย็น (1945-1991), นโยบายต่างประเทศในเอเชีย, สงครามตัวแทน
+                            (สงครามเกาหลี, สงครามเวียดนาม)
+                            และผลกระทบต่อภูมิภาค</p>
+                    </div>
+                    <button class="collapsible">415 325 ยุโรปสมัยสงครามเย็น</button>
+                    <div class="collapsible-content">
+                        <p>การขยายสงครามเย็นจากยุโรปสู่ภูมิภาคอื่น ๆ, การผ่อนคลายความตึงเครียดในยุค 1960s-1970s,
+                            และการสิ้นสุดสงครามเย็นในยุโรป</p>
+                    </div>
+                    <button class="collapsible">415 326
+                        ประวัติศาสตร์ความสัมพันธ์ระหว่างประเทศในเอเชียตะวันออกเฉียงใต้</button>
+                    <div class="collapsible-content">
+                        <p>การศึกษาความสัมพันธ์ระหว่างรัฐในเอเชียตะวันออกเฉียงใต้
+                            ตั้งแต่ยุคจารีตจนถึงช่วงอาณานิคมและสงครามเย็น
+                            รวมถึงปัญหาความสัมพันธ์ระหว่างประเทศในปัจจุบัน</p>
+                    </div>
+                    <button class="collapsible">415 327 รัฐ ชาติ และเขตแดนในเอเชียตะวันออกเฉียงใต้</button>
+                    <div class="collapsible-content">
+                        <p>การศึกษาแนวคิดเรื่องรัฐชาติและการปกครองของรัฐในเอเชียตะวันออกเฉียงใต้,
+                            การเปลี่ยนแปลงทางโลกทัศน์และวิถีชีวิตของผู้คนจากรัฐจารีตสู่รัฐสมัยใหม่ในยุคโลกาภิวัตน์</p>
+                    </div>
                 </div>
-                <button class="collapsible">415 213 ประวัติศาสตร์อยุธยา</button>
+            </div>
+
+            <!-- กลุ่มรายวิชาทักษะ -->
+            <div class="curriculum-column" data-aos="fade-up"  data-aos-duration="1000">
+                <button class="collapsible">กลุ่มรายวิชาทักษะ</button>
                 <div class="collapsible-content">
-                    <p>การก่อตั้ง การปกครอง ความสัมพันธ์ต่างชาติ และการล่มสลายของอยุธยา</p>
-                </div>
-                <button class="collapsible">415 214 ประวัติศาสตร์ล้านนา</button>
-                <div class="collapsible-content">
-                    <p>การก่อตั้งและพัฒนาการของอาณาจักรล้านนา ความสัมพันธ์กับอาณาจักรต่างๆ รวมถึงพม่าฯ</p>
-                </div>
-                <button class="collapsible">415 215 ประวัติศาสตร์อีสาน</button>
-                <div class="collapsible-content">
-                    <p>พัฒนาการของชุมชนอีสาน ตั้งแต่ยุคก่อนประวัติศาสตร์จนถึงปัจจุบัน ความสัมพันธ์กับศูนย์อำนาจในลุ่มแม่น้ำโขงและเจ้าพระยา</p>
-                </div>
-                <button class="collapsible">415 216 ประวัติศาสตร์ภาคใต้ของไทย</button>
-                <div class="collapsible-content">
-                    <p>พัฒนาการของชุมชนภาคใต้และปัญหาความไม่สงบในพื้นที่ชายแดนภาคใต้ </p>
-                </div>
-                <button class="collapsible">415 217 ประวัติศาสตร์ภูมิภาคตะวันตกของไทย </button>
-                <div class="collapsible-content">
-                    <p>การพัฒนาและความหลากหลายทางชาติพันธุ์ในภูมิภาคตะวันตก รวมถึงบทบาทในการท่องเที่ยวเชิงประวัติศาสตร์</p>
-                </div>
-                <button class="collapsible">415 218 ประวัติศาสตร์เอเชียตะวันออกเฉียงใต้ยุคอาณานิคม </button>
-                <div class="collapsible-content">
-                    <p>การเข้าครอบครองดินแดนในเอเชียตะวันออกเฉียงใต้โดยชาติอาณานิคมตะวันตก การปฏิรูปการปกครองและผลกระทบต่อสังคม</p>
-                </div>
-                <button class="collapsible">415 219 ประวัติศาสตร์เอเชียตะวันออกเฉียงใต้ยุคปัจจุบัน </button>
-                <div class="collapsible-content">
-                    <p>
-                    การพัฒนารัฐชาติสมัยใหม่หลังสงครามโลกครั้งที่ 2 ความขัดแย้งในภูมิภาคและบทบาทในเวทีการเมืองโลก</p>
-                </div>
-                <button class="collapsible">415 220 ประวัติศาสตร์เอเชียตะวันออกก่อนสมัยใหม่</button>
-                <div class="collapsible-content">
-                    <p>ประวัติศาสตร์จีน ญี่ปุ่น และเกาหลีตั้งแต่เริ่มยุคประวัติศาสตร์ จนถึงการพัฒนาในสังคมและการปกครอง</p>
-                </div>
-                <button class="collapsible">415 221 ประวัติศาสตร์เอเชียใต้ก่อนสมัยใหม่ </button>
-                <div class="collapsible-content">
-                    <p>
-                    ประวัติศาสตร์ของอนุทวีปอินเดียและศรีลังกาก่อนคริสต์ศตวรรษที่ 18 การพัฒนาทางการเมืองและศาสนา</p>
-                </div>
-                <button class="collapsible">415 222 ประวัติศาสตร์ตะวันออกกลาง </button>
-                <div class="collapsible-content">
-                    <p>
-                    การก่อตั้งจักรวรรดิอิสลาม การขยายตัวของจักรวรรดิออตโตมัน และการพัฒนาของชาติในตะวันออกกลาง</p>
-                </div>
-                <button class="collapsible">415 223 ประวัติศาสตร์ประเทศแถบเทือกเขาหิมาลัย </button>
-                <div class="collapsible-content">
-                    <p>
-                    ประวัติศาสตร์ของประเทศต่างๆ ในแถบเทือกเขาหิมาลัย รวมถึงการเมือง เศรษฐกิจ และความสัมพันธ์ระหว่างประเทศ</p>
-                </div>
-                <button class="collapsible">415 224 415 224 ประวัติศาสตร์อินเดียสมัยใหม่ 
-                </button>
-                <div class="collapsible-content">
-                    <p>
-                    การเข้าครอบครองอินเดียโดยอังกฤษ การเคลื่อนไหวเพื่อเอกราชและการแบ่งแยกประเทศอินเดียและปากีสถาน</p>
-                </div>
-                <button class="collapsible">415 225  ประวัติศาสตร์จีนสมัยใหม่
-                
-                </button>
-                <div class="collapsible-content">
-                    <p>
-                    การปฏิรูปและการสร้างรัฐคอมมิวนิสต์ในจีน การเปลี่ยนแปลงทางการเมืองหลังสงครามโลกครั้งที่ 2</p>
-                </div>
-                <button class="collapsible">415 226 ประวัติศาสตร์ญี่ปุ่นสมัยใหม่
-                </button>
-                <div class="collapsible-content">
-                    <p>
-                    การเจริญเติบโตทางเศรษฐกิจ การฟื้นฟูญี่ปุ่นหลังสงครามโลกครั้งที่ 2 และบทบาทในเวทีการเมืองโลก</p>
-                </div>
-                <button class="collapsible">415 227 ประวัติศาสตร์ออสเตรเลีย </button>
-                <div class="collapsible-content">
-                    <p>
-                    การก่อตั้งออสเตรเลีย การพัฒนาของการเกษตรและอุตสาหกรรม และบทบาทในสงครามโลก</p>
-                </div>
-                <button class="collapsible">415 228 ประวัติศาสตร์กรีกและโรมัน</button>
-                <div class="collapsible-content">
-                    <p>การพัฒนาของนครรัฐกรีกและจักรวรรดิโรมัน การเผยแผ่คริสต์ศาสนาและการเสื่อมสลายของจักรวรรดิโรมัน</p>
-                </div>
-                <button class="collapsible">415 229 ประวัติศาสตร์ยุโรปสมัยกลาง</button>
-                <div class="collapsible-content">
-                    <p>การเปลี่ยนแปลงทางสังคมยุโรปจากการรุกรานของอนารยชน การฟื้นฟูศิลปวิทยาการ และการก่อตัวของรัฐชาติ</p>
-                </div>
-                <button class="collapsible">415 230 ประวัติศาสตร์ยุโรปคริสต์ศตวรรษที่ 19</button>
-                <div class="collapsible-content">
-                    <p>การปฏิวัติอุตสาหกรรม การรวมชาติของอิตาลีและเยอรมนี และการพัฒนาของระบอบประชาธิปไตย</p>
-                </div>
-                <button class="collapsible">415 231 ประวัติศาสตร์ยุโรปคริสต์ศตวรรษที่ 20</button>
-                <div class="collapsible-content">
-                    <p>ยุโรปในช่วงสงครามโลกครั้งที่ 1-2 การเผชิญหน้าของประเทศอภิมหาอำนาจ และการล่มสลายของระบอบคอมมิวนิสต์</p>
-                </div>
-                <button class="collapsible">415 232 ประวัติศาสตร์สหราชอาณาจักร</button>
-                <div class="collapsible-content">
-                    <p>การพัฒนาการทางการเมืองและเศรษฐกิจของอังกฤษ การปฏิวัติอุตสาหกรรม และบทบาทในสงครามโลก</p>
-                </div>
-                <button class="collapsible">415 233 ประวัติศาสตร์ฝรั่งเศสสมัยใหม่</button>
-                <div class="collapsible-content">
-                    <p>ประวัติศาสตร์ฝรั่งเศสในสมัยนโปเลียน การปฏิวัติ 1830 และ 1848 และบทบาทในสหภาพยุโรป</p>
-                </div>
-                <button class="collapsible">415 234 ประวัติศาสตร์เยอรมันสมัยใหม่</button>
-                <div class="collapsible-content">
-                    <p>การก่อตั้งจักรวรรดิเยอรมนี การรวมชาติ เยอรมนีในช่วงสงครามโลกครั้งที่ 1 และ 2</p>
-                </div>
-                <button class="collapsible">415 235 ประวัติศาสตร์รัสเซีย</button>
-                <div class="collapsible-content">
-                    <p>พัฒนาการของรัสเซียตั้งแต่สมัยโรมานอฟ จนถึงการล่มสลายของสหภาพโซเวียตและรัสเซียในปัจจุบัน</p>
-                </div>
-                <button class="collapsible">415 236 ประวัติศาสตร์อเมริกา</button>
-                <div class="collapsible-content">
-                    <p>การพัฒนาเศรษฐกิจและการปกครองของอเมริกาจากยุคอาณานิคมจนถึงปัจจุบัน โดยเน้นการสร้างชาติและสงครามกลางเมือง</p>
-                </div>
-                <button class="collapsible">415 237 ประวัติศาสตร์ดินแดนในบริเวณลุ่มแม่น้ำโขงก่อนสมัยใหม่</button>
-                <div class="collapsible-content">
-                    <p>การศึกษาการเกิดชุมชนเมืองและการก่อตัวของอาณาจักรในลุ่มแม่น้ำโขง, การเปลี่ยนแปลงทางการเมือง เศรษฐกิจ สังคม และวัฒนธรรม,
-                    ความสัมพันธ์ระหว่างรัฐในพื้นที่นี้ รวมถึงอิทธิพลจากภายนอกจนถึงยุคอาณานิคม</p>
+                    <button class="collapsible">415 411 สัมมนาประวัติศาสตร์ไทย</button>
+                    <div class="collapsible-content">
+                        <p>อภิปรายการวิเคราะห์ประเด็นปัญหาในประวัติศาสตร์ไทยในรูปแบบการสัมมนาทางวิชาการ</p>
+                    </div>
+                    <button class="collapsible">415 412 สัมมนาประวัติศาสตร์เอเชีย</button>
+                    <div class="collapsible-content">
+                        <p>อภิปรายการวิเคราะห์ประเด็นปัญหาในประวัติศาสตร์เอเชียในรูปแบบการสัมมนาทางวิชาการ</p>
+                    </div>
+                    <button class="collapsible">415 413 สัมมนาประวัติศาสตร์ยุโรป</button>
+                    <div class="collapsible-content">
+                        <p>อภิปรายการวิเคราะห์ประเด็นปัญหาในประวัติศาสตร์ยุโรปในรูปแบบการสัมมนาทางวิชาการ</p>
+                    </div>
+                    <button class="collapsible">415 414 สัมมนาเหตุการณ์ปัจจุบัน</button>
+                    <div class="collapsible-content">
+                        <p>อภิปรายการวิเคราะห์ประเด็นปัญหาร่วมสมัยที่ส่งผลกระทบต่อโลกในรูปแบบการสัมมนาทางวิชาการ</p>
+                    </div>
+                    <button class="collapsible">415 415 ประวัติศาสตร์กับการสร้างสื่อ</button>
+                    <div class="collapsible-content">
+                        <p>การนำข้อมูลและความรู้ทางประวัติศาสตร์มาสร้างเนื้อหาเพื่อใช้ในการผลิตสื่อในรูปแบบสื่อสิ่งพิมพ์
+                            ภาพข้อมูลหรือสื่อร่วมสมัยอื่น ๆ อย่างสร้างสรรค์</p>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <!-- กลุ่มรายวิชาพินิจ -->
-        <div class="curriculum-column">
-            <button class="collapsible">กลุ่มรายวิชาพินิจ</button>
-            <div class="collapsible-content">
-                <button class="collapsible">415 311 ประวัติศาสตร์การเมืองการปกครองไทย</button>
-                <div class="collapsible-content">
-                    <p>ศึกษาอิทธิพลของความเชื่อที่มีต่อการเมืองการปกครองในไทย ตั้งแต่ลัทธิอินดูและพุทธศาสนา
-                    ไปจนถึงอิทธิพลจากตะวันตกที่มีผลต่อการพัฒนาความคิดทางการเมืองและเหตุการณ์สำคัญทางการเมืองไทย</p>
-                </div>
-                <button class="collapsible">415 312 ประวัติศาสตร์เศรษฐกิจและสังคมไทย</button>
-                <div class="collapsible-content">
-                    <p>ศึกษาระบบไพร่ ความสัมพันธ์ทางสังคมในไทย และการพัฒนาเศรษฐกิจตั้งแต่สมัยอยุธยาจนถึงวิกฤตเศรษฐกิจปี 2540</p>
-                </div>
-                <button class="collapsible">415 313 ประวัติศาสตร์ความสัมพันธ์ของไทยกับต่างประเทศ</button>
-                <div class="collapsible-content">
-                    <p>การศึกษาความสัมพันธ์ระหว่างไทยและต่างประเทศตั้งแต่สมัยสุโขทัย
-                    บทบาทของชาติตะวันตกและปัจจัยทางการเมืองและเศรษฐกิจโลกที่มีอิทธิพลต่อนโยบายต่างประเทศของไทย</p>
-                </div>
-                <button class="collapsible">415 314 ความคิดและคติความเชื่อในสังคมไทย</button>
-                <div class="collapsible-content">
-                    <p>ศึกษาแนวคิดและคติความเชื่อในสังคมไทยตั้งแต่สมัยสุโขทัยจนถึงปัจจุบัน
-                    รวมถึงทัศนคติและโลกทัศน์ที่มีอิทธิพลต่อวิถีชีวิตของคนไทย</p>
-                </div>
-                <button class="collapsible">415 315 ขบวนการคอมมิวนิสต์ในเอเชียตะวันออกเฉียงใต้</button>
-                <div class="collapsible-content">
-                    <p>การศึกษาเกี่ยวกับลัทธิคอมมิวนิสต์ในเอเชียตะวันออกเฉียงใต้
-                    การเติบโตและบทบาทของขบวนการคอมมิวนิสต์ในการต่อสู้เพื่อเอกราชและสร้างชาติ</p>
-                </div>
-                <button class="collapsible">415 316 ชาวจีนโพ้นทะเลในเอเชียตะวันออกเฉียงใต้</button>
-                <div class="collapsible-content">
-                    <p>ประวัติการอพยพของชาวจีนเข้าสู่เอเชียตะวันออกเฉียงใต้และบทบาทของชาวจีนโพ้นทะเลในเศรษฐกิจ การเมือง
-                    และสังคมตั้งแต่ศตวรรษที่ 17</p>
-                </div>
-                <button class="collapsible">415 317 แบบแผนจารีตและความเป็นสมัยใหม่ในเอเชียตะวันออกเฉียงใต้</button>
-                <div class="collapsible-content">
-                    <p>การวิเคราะห์การเปลี่ยนแปลงทางสังคม วัฒนธรรม และวิถีชีวิตในเอเชียตะวันออกเฉียงใต้ตั้งแต่ก่อนคริสต์ศตวรรษที่ 19
-                    จนถึงกระบวนการทำให้ทันสมัยและปรับตัวต่อกระแสโลกาภิวัตน์ในศตวรรษที่ 20</p>
-                </div>
-                <button class="collapsible">415 318 เอเชียกับเศรษฐกิจการเมืองโลก</button>
-                <div class="collapsible-content">
-                    <p>การวิเคราะห์สถานภาพและบทบาทของเอเชียในเศรษฐกิจและการเมืองโลก รวมถึงความร่วมมือและความขัดแย้งในภูมิภาคต่าง ๆ</p>
-                </div>
-                <button class="collapsible">415 319 สหรัฐอเมริกากับการเมืองโลก</button>
-                <div class="collapsible-content">
-                    <p>ศึกษานโยบายต่างประเทศของสหรัฐอเมริกา ตั้งแต่ก่อนสงครามโลกครั้งที่ 2 และการเป็นอภิมหาอำนาจหลังสงครามโลกครั้งที่ 2
-                    รวมถึงบทบาทของสหรัฐอเมริกาในสงครามเย็นและในปัจจุบัน</p>
-                </div>
-                <button class="collapsible">415 320 ประวัติศาสตร์ความคิด</button>
-                <div class="collapsible-content">
-                    <p>ศึกษาความหมายและพัฒนาการของประวัติศาสตร์ความคิด รวมถึงการเปลี่ยนแปลงของความคิดและโลกทัศน์ของมนุษย์ในแต่ละช่วงเวลา</p>
-                </div>
-                <button class="collapsible">415 321 การปฏิวัติในประวัติศาสตร์โลก</button>
-                <div class="collapsible-content">
-                    <p>การศึกษาและวิเคราะห์เหตุการณ์ปฏิวัติที่สำคัญในประวัติศาสตร์โลก โดยเปรียบเทียบสาเหตุ รูปแบบ และผลกระทบของการปฏิวัติ</p>
-                </div>
-                <button class="collapsible">415 322 ประวัติศาสตร์ในภาพยนตร์</button>
-                <div class="collapsible-content">
-                    <p>การวิเคราะห์ข้อเท็จจริงและประเด็นสำคัญทางประวัติศาสตร์ที่ถ่ายทอดในภาพยนตร์
-                    รวมถึงการพิจารณาวิถีชีวิตและวัฒนธรรมจากภาพยนตร์</p>
-                </div>
-                <button class="collapsible">415 323 ประวัติศาสตร์ผ่านสื่อร่วมสมัย</button>
-                <div class="collapsible-content">
-                    <p>การสร้างเนื้อหาประวัติศาสตร์เพื่อเผยแพร่ผ่านสื่อร่วมสมัย เช่น สื่อสิ่งพิมพ์และสื่ออิเล็กทรอนิกส์</p>
-                </div>
-                <button class="collapsible">415 324 เอเชียสมัยสงครามเย็น</button>
-                <div class="collapsible-content">
-                    <p>การศึกษาเอเชียในช่วงสงครามเย็น (1945-1991), นโยบายต่างประเทศในเอเชีย, สงครามตัวแทน (สงครามเกาหลี, สงครามเวียดนาม)
-                    และผลกระทบต่อภูมิภาค</p>
-                </div>
-                <button class="collapsible">415 325 ยุโรปสมัยสงครามเย็น</button>
-                <div class="collapsible-content">
-                    <p>การขยายสงครามเย็นจากยุโรปสู่ภูมิภาคอื่น ๆ, การผ่อนคลายความตึงเครียดในยุค 1960s-1970s, และการสิ้นสุดสงครามเย็นในยุโรป</p>
-                </div>
-                <button class="collapsible">415 326 ประวัติศาสตร์ความสัมพันธ์ระหว่างประเทศในเอเชียตะวันออกเฉียงใต้</button>
-                <div class="collapsible-content">
-                    <p>การศึกษาความสัมพันธ์ระหว่างรัฐในเอเชียตะวันออกเฉียงใต้ ตั้งแต่ยุคจารีตจนถึงช่วงอาณานิคมและสงครามเย็น
-                    รวมถึงปัญหาความสัมพันธ์ระหว่างประเทศในปัจจุบัน</p>
-                </div>
-                <button class="collapsible">415 327 รัฐ ชาติ และเขตแดนในเอเชียตะวันออกเฉียงใต้</button>
-                <div class="collapsible-content">
-                    <p>การศึกษาแนวคิดเรื่องรัฐชาติและการปกครองของรัฐในเอเชียตะวันออกเฉียงใต้,
-                    การเปลี่ยนแปลงทางโลกทัศน์และวิถีชีวิตของผู้คนจากรัฐจารีตสู่รัฐสมัยใหม่ในยุคโลกาภิวัตน์</p>
-                </div>
-            </div>
-        </div>
-    
-        <!-- กลุ่มรายวิชาทักษะ -->
-        <div class="curriculum-column">
-            <button class="collapsible">กลุ่มรายวิชาทักษะ</button>
-            <div class="collapsible-content">
-                <button class="collapsible">415 411 สัมมนาประวัติศาสตร์ไทย</button>
-                <div class="collapsible-content">
-                    <p>อภิปรายการวิเคราะห์ประเด็นปัญหาในประวัติศาสตร์ไทยในรูปแบบการสัมมนาทางวิชาการ</p>
-                </div>
-                <button class="collapsible">415 412 สัมมนาประวัติศาสตร์เอเชีย</button>
-                <div class="collapsible-content">
-                    <p>อภิปรายการวิเคราะห์ประเด็นปัญหาในประวัติศาสตร์เอเชียในรูปแบบการสัมมนาทางวิชาการ</p>
-                </div>
-                <button class="collapsible">415 413 สัมมนาประวัติศาสตร์ยุโรป</button>
-                <div class="collapsible-content">
-                    <p>อภิปรายการวิเคราะห์ประเด็นปัญหาในประวัติศาสตร์ยุโรปในรูปแบบการสัมมนาทางวิชาการ</p>
-                </div>
-                <button class="collapsible">415 414 สัมมนาเหตุการณ์ปัจจุบัน</button>
-                <div class="collapsible-content">
-                    <p>อภิปรายการวิเคราะห์ประเด็นปัญหาร่วมสมัยที่ส่งผลกระทบต่อโลกในรูปแบบการสัมมนาทางวิชาการ</p>
-                </div>
-                <button class="collapsible">415 415 ประวัติศาสตร์กับการสร้างสื่อ</button>
-                <div class="collapsible-content">
-                    <p>การนำข้อมูลและความรู้ทางประวัติศาสตร์มาสร้างเนื้อหาเพื่อใช้ในการผลิตสื่อในรูปแบบสื่อสิ่งพิมพ์
-                    ภาพข้อมูลหรือสื่อร่วมสมัยอื่น ๆ อย่างสร้างสรรค์</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var collapsibles = document.querySelectorAll(".collapsible");
-            collapsibles.forEach(function (btn) {
-                btn.addEventListener("click", function () {
-                    var content = this.nextElementSibling;
-                    if (content) {
-                        content.style.display = content.style.display === "block" ? "none" : "block";
-                    }
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var collapsibles = document.querySelectorAll(".collapsible");
+                collapsibles.forEach(function (btn) {
+                    btn.addEventListener("click", function () {
+                        var content = this.nextElementSibling;
+                        if (content) {
+                            content.style.display = content.style.display === "block" ? "none" : "block";
+                        }
+                    });
                 });
             });
-        });
-    </script>
-</div>
-<div class="br">
-    <br>
-    <br>
-    <br>
-    <br>
-</div>
+        </script>
+    </div>
+    <div class="br">
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
 
 
 <!----------------faculty--------------------->
-<div class="faculty scroll-up"><a id="faculty"></a> 
-    <div class="faculty-container">
-        <div class="faculty-title">FACULTY</div>
+    <!----------------faculty--------------------->
+    <div class="faculty scroll-up"><a id="faculty"></a>
+        <div class="faculty-container">
+            <div class="faculty-title" data-aos="flip-left" data-aos-duration="1000">FACULTY</div>
     
-        <div class="faculty-grid scroll-up">
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/warangkana.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/warangkana-nibhatsukit/" target="_blank"><div class="faculty-name">รองศาสตราจารย์ <br>ดร.วรางคณา นิพัทธ์สุขกิจ</div></a>
-                <div class="faculty-email">karakaew@gmail.com</div>
-            </div>
+            <div class="faculty-grid scroll-up">
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/warangkana.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/warangkana-nibhatsukit/" target="_blank">
+                        <div class="faculty-name">รองศาสตราจารย์ <br>ดร.วรางคณา นิพัทธ์สุขกิจ</div>
+                    </a>
+                    <div class="faculty-email">karakaew@gmail.com</div>
+                </div>
     
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/puengtip.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/puengthip-kiattisahakul/"  target="_blank">
-                <div class="faculty-name">ผู้ช่วยศาสตราจารย์<br>ดร.พวงทิพย์ เกียรติสหกุล</div></a>
-                <div class="faculty-email">jibartsu@hotmail.com</div>
-            </div>
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/puengtip.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/puengthip-kiattisahakul/" target="_blank">
+                        <div class="faculty-name">ผู้ช่วยศาสตราจารย์<br>ดร.พวงทิพย์ เกียรติสหกุล</div>
+                    </a>
+                    <div class="faculty-email">jibartsu@hotmail.com</div>
+                </div>
     
-             <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/Woraporn.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/woraporn-poopongpan/" target="_blank">
-                <div class="faculty-name">ผู้ช่วยศาสตราจารย์<br> ดร.วรพร ภู่พงศ์พันธุ์</div></a>
-                <div class="faculty-email">p_woraporn@yahoo.com</div>
-            </div>
-        </div>
-        <br>
-        <div class="faculty-grid scroll-up">
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/Nutthapon.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/nattapon-yurungruangsak/" target="_blank">
-                <div class="faculty-name">ผู้ช่วยศาสตราจารย์    <br>ดร.ณัฐพล อยู่รุ่งเรืองศักดิ์</div></a>
-                <div class="faculty-email">kajaiku@hotmail.co.th
-</div>
-            </div>
-        
-            <div class="faculty-card ">
-                <img src="pic/Faculty/Faculty2/Catthiyakorn.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/catthiyakorn-sasitharamas/" target="_blank">
-                <div class="faculty-name">ผู้ช่วยศาสตราจารย์<br> ดร.คัททิยากร ศศิธรามาศ</div></a>
-                <div class="faculty-email">Sasitharamas_c@silpakorn.edu</div>
-            </div>
-        
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/Petchada.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/petchada-choon-on/" target="_blank">
-                <div class="faculty-name">อาจารย์ ดร.เพชรดา ชุนอ่อน</div></a>
-                <div class="faculty-email">Choon-on_p@silpakorn.edu</div>
-            </div>
-        </div>
-        <br>
-        <div class="faculty-grid scroll-up">
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/Pipu.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/pipu-boosabok/" target="_blank">
-                <div class="faculty-name">อาจารย์ ดร.พิภู บุษบก</div></a>
-                <div class="faculty-email">boosabok_p@silpakorn.edu</div>
-            </div>
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/Rachatapong.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/rachatapong-malithong/" target="_blank">
-                <div class="faculty-name">อาจารย์ ดร.รัชตพงศ์ มะลิทอง</div></a>
-                <div class="faculty-email">Malithong_R@silpakorn.edu</div>
-                <br>
-            </div>
-        
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/Tanapong-Luekajornchai.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/tanapong-luekajornchai/" target="_blank">
-                <div class="faculty-name">อาจารย์ ดร.ฐนพงศ์ ลือขจรชัย</div></a>
-                <div class="faculty-email">luekajornchai_t@su.ac.th</div>
-                <br>
-            </div>
-        </div>
-        <br>
-        <div class="faculty-grid scroll-up">
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/yingyot.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/yingyot-boonchant/" target="_blank">
-                <div class="faculty-name">อาจารย์ ดร. ยิ่งยศ บุญจันทร์</div></a>
-                <div class="faculty-email">boonchant_y@su.ac.th</div>
-                <br>
-            </div>
-        
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/WipaweeSrifa.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/wipawee-srifa/" target="_blank">
-                <div class="faculty-name">อาจารย์ ดร.วิภาวี ศรีฟ้า</div></a>
-                <div class="faculty-email">Srifa_w@silpakorn.edu</div>
-                <br>
-            </div>
-        
-            <div class="faculty-card">
-                <img src="pic/Faculty/Faculty2/TUANGTHIP.png" alt="อาจารย์">
-                <a href="https://arts.su.ac.th/faculty_of_teachers/tuangthip-phromkhet/" target="_blank">
-                <div class="faculty-name">อาจารย์ตวงทิพย์ พรมเขต</div></a>
-                <div class="faculty-email">Phromkhet_t@silpakorn.edu</div>
-                <br>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-</div>
-<!----------------fqa--------------------->
-<div class="fqa scroll-up"><a id="fqa"></a> 
-    <div class="fqa-wrapper">
-        <div class="fqa-header">FAQ</div>
-        <div class="fqa-grid">
-            <div class="fqa-item scroll-up" onclick="toggleAnswer(1)">
-                <img src="pic/qa/q1.PNG"     " alt="Q1 Image">
-                <h3>Q.1</h3>
-                <p>คณะโบราณคดี และ คณะอักษรศาสตร์ เอกประวัติศาสตร์ ต่างกันอย่างไร?</p>
-                <div class="answer" id="answer1">สาขาประวัติศาสตร์เน้นการศึกษาผ่านหลักฐานที่เป็นลายลักษณ์อักษร เช่น เอกสารทางประวัติศาสตร์ บันทึกจดหมายเหตุ
-                และงานเขียนทางประวัติศาสตร์ ส่วนโบราณคดีศึกษาโดยเน้นการวิเคราะห์โบราณวัตถุ สิ่งของที่ขุดค้นพบ เช่น เครื่องปั้นดินเผา
-                ศิลปวัตถุ และโครงสร้างทางสถาปัตยกรรม </div>
-            </div>
-            <div class="fqa-item scroll-up" onclick="toggleAnswer(2)">
-                <img src="pic/qa/q2.PNG" alt="Q2 Image">
-                <h3>Q.2</h3>
-                <p>หากเรียนคณะอักษรศาสตร์ เอกประวัติศาสตร์ เมื่อจบการศึกษา สามารถสอบบรรจุวิชาชีพครูได้หรือไม่?</p>
-                <div class="answer" id="answer2">การเรียนประวัติศาสตร์เป็นพื้นฐานเพื่อนำไปต่อยอดในด้านต่าง ๆ
-                แต่ในกรณีที่ต้องการนำวุฒิไปสอบบรรจุครูไม่สามารถสอบบรรจุได้โดยตรง
-                เนื่องจากหลักสูตรของคณะอักษรศาสตร์ไม่ได้ให้วุฒิวิชาชีพครู หากต้องการเป็นครู จะต้องเรียนหลักสูตรประกาศนียบัตรบัณฑิต
-                (ป.บัณฑิต) สาขาวิชาชีพครูก่อน สามารถตรวจสอบรายละเอียดเพิ่มเติมจากมหาวิทยาลัยที่เปิดสอนหลักสูตรนี้</div>
-            </div>
-            <div class="fqa-item scroll-up" onclick="toggleAnswer(3)">
-                <img src="pic/qa/q3.JPG" alt="Q3 Image">
-                <h3>Q.3</h3>
-                <p>หากไม่ได้ลงเรียนวิชาระดับต้น สามารถลงเรียนวิชาเลือกของเอกประวัติศาสตร์ได้หรือไม่?</p>
-                <div class="answer" id="answer3">สามารถลงเรียนได้ แต่รายวิชาจะมีสถานะเป็น "วิชาเลือกเสรี" เท่านั้น อย่างไรก็ตาม
-                หากในภายหลังได้รับการรับเข้าเป็นนักศึกษาเอกประวัติศาสตร์ วิชาดังกล่าวสามารถปรับเป็นวิชาเอกได้</div>
-            </div>
-            <div class="fqa-item scroll-up" onclick="toggleAnswer(4)">
-                <img src="pic/qa/q4.JPG" alt="Q4 Image">
-                <h3>Q.4</h3>
-                <p>นักศึกษาวิชาโทสามารถลงเรียนวิชาบังคับของเอกประวัติศาสตร์ได้หรือไม่?</p>
-                <div class="answer" id="answer4">ตามหลักสูตรปี 2564 นักศึกษาวิชาโทสามารถลงเรียนวิชาบังคับของเอกประวัติศาสตร์ได้ในบางรายวิชา
-                ทั้งนี้สามารถตรวจสอบรายละเอียดเพิ่มเติมได้จากระบบทะเบียนของมหาวิทยาลัยและเล่มหลักสูตรจริงในส่วนของรายวิชาที่สามารถลงได้และไม่สามารถลงได้
-
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/Woraporn.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/woraporn-poopongpan/" target="_blank">
+                        <div class="faculty-name">ผู้ช่วยศาสตราจารย์<br> ดร.วรพร ภู่พงศ์พันธุ์</div>
+                    </a>
+                    <div class="faculty-email">p_woraporn@yahoo.com</div>
                 </div>
             </div>
-            <div class="fqa-item scroll-up" onclick="toggleAnswer(5)">
-                <img src="pic/qa/q5.PNG" alt="Q5 Image">
-                <h3>Q.5</h3>
-                <p>หากไม่สามารถลงทะเบียนเรียนวิชาบังคับเอกในเทอมที่กำหนด สามารถลงในเทอมอื่นได้หรือไม่?</p>
-                <div class="answer" id="answer5">สามารถทำได้ ทั้งนี้ขึ้นอยู่กับการจัดตารางเรียนของนักศึกษาและการเปิดสอนของอาจารย์ประจำรายวิชานั้น ๆ</div>
+            <br>
+            <div class="faculty-grid scroll-up">
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/Nutthapon.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/nattapon-yurungruangsak/" target="_blank">
+                        <div class="faculty-name">ผู้ช่วยศาสตราจารย์ <br>ดร.ณัฐพล อยู่รุ่งเรืองศักดิ์</div>
+                    </a>
+                    <div class="faculty-email">kajaiku@hotmail.co.th
+                    </div>
+                </div>
+    
+                <div class="faculty-card " data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/Catthiyakorn.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/catthiyakorn-sasitharamas/" target="_blank">
+                        <div class="faculty-name">ผู้ช่วยศาสตราจารย์<br> ดร.คัททิยากร ศศิธรามาศ</div>
+                    </a>
+                    <div class="faculty-email">Sasitharamas_c@silpakorn.edu</div>
+                </div>
+    
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/Petchada.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/petchada-choon-on/" target="_blank">
+                        <div class="faculty-name">อาจารย์ ดร.เพชรดา ชุนอ่อน</div>
+                    </a>
+                    <div class="faculty-email">Choon-on_p@silpakorn.edu</div>
+                </div>
             </div>
-            <div class="fqa-item scroll-up" onclick="toggleAnswer(6)">
-                <img src="pic/qa/q6.JPG" alt="Q6 Image">
-                <h3>Q.6</h3>
-                <p>ภาควิชาประวัติศาสตร์ตั้งอยู่ที่ไหนในคณะอักษรศาสตร์?</p>
-                <div class="answer" id="answer6">ภาควิชาประวัติศาสตร์ตั้งอยู่บริเวณ "ลานพิกุล" ใกล้กับโรงอาหารยูเนียนและอาคารอักษรศาสตร์ 1</div>
+            <br>
+            <div class="faculty-grid scroll-up">
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/Pipu.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/pipu-boosabok/" target="_blank">
+                        <div class="faculty-name">อาจารย์ ดร.พิภู บุษบก</div>
+                    </a>
+                    <div class="faculty-email">boosabok_p@silpakorn.edu</div>
+                </div>
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/Rachatapong.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/rachatapong-malithong/" target="_blank">
+                        <div class="faculty-name">อาจารย์ ดร.รัชตพงศ์ มะลิทอง</div>
+                    </a>
+                    <div class="faculty-email">Malithong_R@silpakorn.edu</div>
+                    <br>
+                </div>
+    
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/Tanapong-Luekajornchai.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/tanapong-luekajornchai/" target="_blank">
+                        <div class="faculty-name">อาจารย์ ดร.ฐนพงศ์ ลือขจรชัย</div>
+                    </a>
+                    <div class="faculty-email">luekajornchai_t@su.ac.th</div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="faculty-grid scroll-up">
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/yingyot.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/yingyot-boonchant/" target="_blank">
+                        <div class="faculty-name">อาจารย์ ดร. ยิ่งยศ บุญจันทร์</div>
+                    </a>
+                    <div class="faculty-email">boonchant_y@su.ac.th</div>
+                    <br>
+                </div>
+    
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/WipaweeSrifa.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/wipawee-srifa/" target="_blank">
+                        <div class="faculty-name">อาจารย์ ดร.วิภาวี ศรีฟ้า</div>
+                    </a>
+                    <div class="faculty-email">Srifa_w@silpakorn.edu</div>
+                    <br>
+                </div>
+    
+                <div class="faculty-card" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="pic/Faculty/Faculty2/TUANGTHIP.png" alt="อาจารย์">
+                    <a href="https://arts.su.ac.th/faculty_of_teachers/tuangthip-phromkhet/" target="_blank">
+                        <div class="faculty-name">อาจารย์ตวงทิพย์ พรมเขต</div>
+                    </a>
+                    <div class="faculty-email">Phromkhet_t@silpakorn.edu</div>
+                    <br>
+                </div>
             </div>
         </div>
+        <br>
+        <br>
+    </div>
+
+
+
+
+    <!----------------fqa--------------------->
+    <div class="fqa scroll-up"><a id="fqa"></a>
+        <div class="fqa-wrapper">
+            <div class="fqa-header" class="faculty-title" data-aos="flip-left">FAQ</div>
+            <div class="fqa-grid">
+                <div class="fqa-item scroll-up" onclick="toggleAnswer(1)">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/qa/q1.PNG" " alt=" Q1 Image">
+                    <h3 data-aos="flip-left" data-aos-duration="1000">Q.1</h3>
+                    <p data-aos="flip-left" data-aos-duration="1000">คณะโบราณคดี และ คณะอักษรศาสตร์ เอกประวัติศาสตร์
+                        ต่างกันอย่างไร?</p>
+                    <div class="answer" id="answer1">สาขาประวัติศาสตร์เน้นการศึกษาผ่านหลักฐานที่เป็นลายลักษณ์อักษร เช่น
+                        เอกสารทางประวัติศาสตร์ บันทึกจดหมายเหตุ
+                        และงานเขียนทางประวัติศาสตร์ ส่วนโบราณคดีศึกษาโดยเน้นการวิเคราะห์โบราณวัตถุ สิ่งของที่ขุดค้นพบ เช่น
+                        เครื่องปั้นดินเผา
+                        ศิลปวัตถุ และโครงสร้างทางสถาปัตยกรรม </div>
+                </div>
+                <div class="fqa-item scroll-up" onclick="toggleAnswer(2)">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/qa/q2.PNG" alt="Q2 Image">
+                    <h3 data-aos="flip-left" data-aos-duration="1000">Q.2</h3>
+                    <p data-aos="flip-left" data-aos-duration="1000">หากเรียนคณะอักษรศาสตร์ เอกประวัติศาสตร์ เมื่อจบการศึกษา
+                        สามารถสอบบรรจุวิชาชีพครูได้หรือไม่?</p>
+                    <div class="answer" id="answer2">การเรียนประวัติศาสตร์เป็นพื้นฐานเพื่อนำไปต่อยอดในด้านต่าง ๆ
+                        แต่ในกรณีที่ต้องการนำวุฒิไปสอบบรรจุครูไม่สามารถสอบบรรจุได้โดยตรง
+                        เนื่องจากหลักสูตรของคณะอักษรศาสตร์ไม่ได้ให้วุฒิวิชาชีพครู หากต้องการเป็นครู
+                        จะต้องเรียนหลักสูตรประกาศนียบัตรบัณฑิต
+                        (ป.บัณฑิต) สาขาวิชาชีพครูก่อน สามารถตรวจสอบรายละเอียดเพิ่มเติมจากมหาวิทยาลัยที่เปิดสอนหลักสูตรนี้
+                    </div>
+                </div>
+                <div class="fqa-item scroll-up" onclick="toggleAnswer(3)">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/qa/q3.JPG" alt="Q3 Image">
+                    <h3 data-aos="flip-left" data-aos-duration="1000">Q.3</h3>
+                    <p data-aos="flip-left" data-aos-duration="1000">หากไม่ได้ลงเรียนวิชาระดับต้น
+                        สามารถลงเรียนวิชาเลือกของเอกประวัติศาสตร์ได้หรือไม่?</p>
+                    <div class="answer" id="answer3">สามารถลงเรียนได้ แต่รายวิชาจะมีสถานะเป็น "วิชาเลือกเสรี" เท่านั้น
+                        อย่างไรก็ตาม
+                        หากในภายหลังได้รับการรับเข้าเป็นนักศึกษาเอกประวัติศาสตร์ วิชาดังกล่าวสามารถปรับเป็นวิชาเอกได้</div>
+                </div>
+                <div class="fqa-item scroll-up" onclick="toggleAnswer(4)">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/qa/q4.JPG" alt="Q4 Image">
+                    <h3 data-aos="flip-left" data-aos-duration="1000">Q.4</h3>
+                    <p data-aos="flip-left" data-aos-duration="1000">
+                        นักศึกษาวิชาโทสามารถลงเรียนวิชาบังคับของเอกประวัติศาสตร์ได้หรือไม่?</p>
+                    <div class="answer" id="answer4">ตามหลักสูตรปี 2564
+                        นักศึกษาวิชาโทสามารถลงเรียนวิชาบังคับของเอกประวัติศาสตร์ได้ในบางรายวิชา
+                        ทั้งนี้สามารถตรวจสอบรายละเอียดเพิ่มเติมได้จากระบบทะเบียนของมหาวิทยาลัยและเล่มหลักสูตรจริงในส่วนของรายวิชาที่สามารถลงได้และไม่สามารถลงได้
+    
+                    </div>
+                </div>
+                <div class="fqa-item scroll-up" onclick="toggleAnswer(5)">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/qa/q5.PNG" alt="Q5 Image">
+                    <h3 data-aos="flip-left" data-aos-duration="1000">Q.5</h3>
+                    <p data-aos="flip-left" data-aos-duration="1000">หากไม่สามารถลงทะเบียนเรียนวิชาบังคับเอกในเทอมที่กำหนด
+                        สามารถลงในเทอมอื่นได้หรือไม่?</p>
+                    <div class="answer" id="answer5">สามารถทำได้
+                        ทั้งนี้ขึ้นอยู่กับการจัดตารางเรียนของนักศึกษาและการเปิดสอนของอาจารย์ประจำรายวิชานั้น ๆ</div>
+                </div>
+                <div class="fqa-item scroll-up" onclick="toggleAnswer(6)">
+                    <img data-aos="flip-left" data-aos-duration="1000" src="pic/qa/q6.JPG" alt="Q6 Image">
+                    <h3 data-aos="flip-left" data-aos-duration="1000">Q.6</h3>
+                    <p data-aos="flip-left" data-aos-duration="1000">ภาควิชาประวัติศาสตร์ตั้งอยู่ที่ไหนในคณะอักษรศาสตร์?</p>
+                    <div class="answer" id="answer6">ภาควิชาประวัติศาสตร์ตั้งอยู่บริเวณ "ลานพิกุล"
+                        ใกล้กับโรงอาหารยูเนียนและอาคารอักษรศาสตร์ 1</div>
+                </div>
+            </div>
+        </div>
+        <!--Fn สำหรับซ่อนคำตอบเเละคลิกให้เเสดง-->
+        <script>
+            function toggleAnswer(id) {
+                var answer = document.getElementById("answer" + id);
+                if (answer.style.display === "none" || answer.style.display === "") {
+                    answer.style.display = "block";
+                } else {
+                    answer.style.display = "none";
+                }
+            }
+        </script>
     </div>
     
-    <script>
-        function toggleAnswer(id) {
-            var answer = document.getElementById("answer" + id);
-            if (answer.style.display === "none" || answer.style.display === "") {
-                answer.style.display = "block";
-            } else {
-                answer.style.display = "none";
-            }
-        }
-    </script>
-</div>
-<!----------------contact--------------------->
+    
+    <!----------------contact--------------------->
     <div class="contact scroll-up">
         <div class="video scroll-up">
             <iframe
                 src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FHistoryArtsSU%2Fvideos%2F574850665215675%2F&show_text=false&width=560&t=0"
-                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true" data-aos="fade-up" data-aos-duration="1000"></iframe>
         </div>
         <div class="contactface scroll-up"><a id="contact"></a>
-            <h2 class="confont">CONTACT</h2>
-            <div class="faceicon">
+            <h2 class="confont" data-aos="fade-up" data-aos-duration="1000">CONTACT</h2>
+            <div class="faceicon" data-aos="fade-up" data-aos-duration="1000">
                 <a href="https://www.facebook.com/HistoryArtsSU" target="_blank">
                     <img src="pic/icon_facebook/Facebook-Icon-4.png" width="40" class="fb-icon">
                 </a>
-                <p>ภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์<br>มหาวิทยาลัยศิลปากร</p>
+                <p data-aos="fade-up" data-aos-duration="1000">ภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์<br>มหาวิทยาลัยศิลปากร</p>
             </div>
             <br>
             <a href="https://arts.su.ac.th/%e0%b8%ab%e0%b8%99%e0%b9%88%e0%b8%a7%e0%b8%a2%e0%b8%87%e0%b8%b2%e0%b8%99/%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%a7%e0%b8%b1%e0%b8%95%e0%b8%b4%e0%b8%a8%e0%b8%b2%e0%b8%aa%e0%b8%95%e0%b8%a3%e0%b9%8c/%e0%b8%a1%e0%b8%b8%e0%b8%a1%e0%b8%ab%e0%b8%99%e0%b8%b1%e0%b8%87%e0%b8%aa%e0%b8%b7%e0%b8%ad/"
                 target="_blank">
-                <button class="book-corner">BOOK CORNER</button>
+                <button class="book-corner" data-aos="fade-up" data-aos-duration="1000">BOOK CORNER</button>
             </a>
             <a href="https://arts.su.ac.th/%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3/%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C/"
                 target="_blank">
-                <button class="download">ดาวน์โหลดเอกสารหลักสูตรแบบฉบับเต็ม</button>
+                <button class="download" data-aos="fade-up"
+                    data-aos-duration="1000">ดาวน์โหลดเอกสารหลักสูตรแบบฉบับเต็ม</button>
             </a>
-
-
+    
+    
         </div>
     </div>
 
-    <button id="backToTop"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" 
-        class="bi-arrow-90deg-up"
-        viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-            d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708z" />
-    </svg> </button>
-    
+    <button id="backToTop"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi-arrow-90deg-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708z" />
+        </svg> </button>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             let backToTopButton = document.getElementById("backToTop");
@@ -984,49 +1081,57 @@
     </script>
 
     <!----------------footer--------------------->
-    <div class="footer"> 
+    <div class="footer">
         <div class="footer-text">
-        <h12>Design and Organize Art Elements
-        <p>&nbsp;&nbsp;ณัฐธิดา สุวรรณเกตุ <br>
-        &nbsp;&nbsp;ธิติพัทธ์ วงศ์อติกานต์ <br>
-        &nbsp;&nbsp;ฝนทอง เหมือนสี <br>
-        &nbsp;&nbsp;กัลยภรณ์ นิลพฤษก์</p></h12>
-        <h12>Coding
-            <p>&nbsp;&nbsp;ณัฐธิดา สุวรรณเกตุ </p>
-            <h13>Content
-                <p>
-                &nbsp;&nbsp;ฝนทอง เหมือนสี <br>
-                &nbsp;&nbsp;กัลยภรณ์ นิลพฤษก์</p>
-               
-            </h13>
-        </h12>
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const elements = document.querySelectorAll(".scroll-up");
+            <h12>Design and Organize Art Elements
+                <p>&nbsp;&nbsp;ณัฐธิดา สุวรรณเกตุ <br>
+                    &nbsp;&nbsp;ธิติพัทธ์ วงศ์อติกานต์ <br>
+                    &nbsp;&nbsp;ฝนทอง เหมือนสี <br>
+                    &nbsp;&nbsp;กัลยภรณ์ นิลพฤษก์</p>
+            </h12>
+            <h12>Coding
+                <p>&nbsp;&nbsp;ณัฐธิดา สุวรรณเกตุ </p>
+                <h13>Content
+                    <p>
+                        &nbsp;&nbsp;ฝนทอง เหมือนสี <br>
+                        &nbsp;&nbsp;กัลยภรณ์ นิลพฤษก์</p>
 
-            function checkVisibility() {
-                const windowHeight = window.innerHeight;
-                elements.forEach((element) => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    if (elementTop < windowHeight - 100) {
-                        element.classList.add("visible");
-                    } else {
-                        element.classList.remove("visible");
-                    }
-                });
-            }
+                </h13>
+            </h12>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const elements = document.querySelectorAll(".scroll-up");
 
-            window.addEventListener("scroll", checkVisibility);
-            checkVisibility();  // check visibility when the page loads
-        });
-    </script>
+                function checkVisibility() {
+                    const windowHeight = window.innerHeight;
+                    elements.forEach((element) => {
+                        const elementTop = element.getBoundingClientRect().top;
+                        if (elementTop < windowHeight - 100) {
+                            element.classList.add("visible");
+                        } else {
+                            element.classList.remove("visible");
+                        }
+                    });
+                }
+
+                window.addEventListener("scroll", checkVisibility);
+                checkVisibility();  // check visibility when the page loads
+            });
+        </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-   
-   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <!---AOS--->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
 </body>
 
 </html>
