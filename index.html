@@ -19,7 +19,14 @@
 
 </head>
 
-<body>
+<body onload= "activeShowPage()">
+    <!-- pre-loader -->
+    <div id="preLoader" class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+    <div id="preContent" class="pre-loader-content fadecontent">
+
     <!-- เมนูบาร์ -->
     <nav class="navbar scroll-up">
         <ul>
@@ -89,28 +96,29 @@
     </div>
 
     <!----------------programs--------------------->
-    <div class="programs "><a id="programs"></a>
+    <div class="programs"><a id="programs"></a>
         <div class="text-box" data-aos="fade-up" data-aos-duration="1000">
             <div class="box scroll-up">
                 <p class="content">
                     หลักสูตรการศึกษาของภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์
                     ระดับปริญญาตรี (หลักสูตรปรับปรุง พ.ศ. 2564)
                     หน่วยกิตตลอดหลักสูตรขั้นต่ำ 145 หน่วย แบ่งเป็น <br><br>
-                    หมวดวิชาทั่วไป 30 หน่วยกิต <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับ
-                    24 หน่วยกิต <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเลือก
-                    6 หน่วยกิต <br><br>
-                    หมวดวิชาเฉพาะ 109 หน่วยกิต <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาพื้นฐานอักษร
-                    13 หน่วยกิต <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาสาขาระดับต้นของคณะฯ
-                    12 หน่วยกิต <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเอก
-                    60 หน่วยกิต <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาโท
-                    24 หน่วยกิต <br><br>
-                    หมวดวิชาเสรี 6 หน่วยกิต
+                    &nbsp;&nbsp;&nbsp;&nbsp;หมวดวิชาทั่วไป 30 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับ 24 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเลือก 6 หน่วยกิต <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;หมวดวิชาเฉพาะ 109 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาพื้นฐานอักษร 13 หน่วยกิต
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาสาขาระดับต้นของคณะฯ 12
+                    หน่วยกิต <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเอก 60 หน่วยกิต
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับ
+                    36 หน่วยกิต<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับเลือก
+                    24 หน่วยกิต<br>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาโท 24 หน่วยกิต <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;หมวดวิชาเสรี 6 หน่วยกิต
                 </p>
             </div>
         </div>
@@ -119,16 +127,19 @@
                 <span>PROGRAM</span>
                 <span>PROGRAM</span>
                 <span>PROGRAM</span>
+    
             </div>
             <div class="image-box">
                 <img src="pic/home/camera.PNG" class="camera">
             </div>
         </div>
+    
     </div>
-    </div>
+    
+    
     <!----------------programs for smartphone--------------------->
     <div class="programs-2 "><a id="programs-2"></a>
-        <div class="text-box-2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="text-box-2">
             <div class="box-2 scroll-up">
                 <p class="content-2 scroll-up">
                     หลักสูตรการศึกษาของภาควิชาประวัติศาสตร์ คณะอักษรศาสตร์
@@ -146,6 +157,8 @@
                     12 หน่วยกิต <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาเอก
                     60 หน่วยกิต <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับ 36 หน่วยกิต<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาบังคับเลือก 24 หน่วยกิต<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วิชาโท
                     24 หน่วยกิต <br><br>
                     หมวดวิชาเสรี 6 หน่วยกิต
@@ -162,59 +175,63 @@
                 <img src="pic/home/camera.PNG" class="camera">
             </div>
         </div>
-
+    
     </div>
-
-    </div>
-
+    
+    
+    
     <!----------------intro--------------------->
-    <div class="intro scroll-up" data-aos="fade-up" data-aos-duration="1000" >
+    <div class="intro scroll-up">
         <h1 class="intro_text">INTRO</h1>
         <br>
         <div class="intro-content">
-
+    
             <div class="col-md-4">
-                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000" src="pic/intro/intro_icon1.PNG" alt="icon1">
+                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000" src="pic/intro/intro_icon1.PNG"
+                        alt="icon1">
                 </div>
                 <h5>ชั้นปีที่ 1</h5><br>
                 <h7>จะเน้นเรียนหมวดวิชาทั่วไป รายวิชาพื้นฐานของคณะ<br>(หมวดวิชาเฉพาะ) เเละรายวิชาสาขาระดับต้น</h7>
-
+    
             </div>
             <div class="col-md-4">
-                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon2.PNG" alt="icon2"></div>
+                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000" src="pic/intro/intro_icon2.PNG"
+                        alt="icon2"></div>
                 <h5>ชั้นปีที่ 2-3</h5><br>
                 <h7>เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไป<br>อยู่บ้างเเละเรียนวิชาสาขาระดับต้น
                     หรือพวกกลุ่มวิชาเสรี
                     เมื่อปี 3 จะมี<br>การเรียนวิชาบังคับเลือกเป็นส่วนใหญ่ เเละเรียนรายวิชาโท</h7>
             </div>
             <div class="col-md-4">
-                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon3.PNG" alt="icon3"></div>
+                <div class="icon"><img data-aos="flip-left" data-aos-duration="1000" src="pic/intro/intro_icon3.PNG"
+                        alt="icon3"></div>
                 <h5>ชั้นปีที่ 4</h5><br>
                 <h7>วิชาบังคับเลือกเอกตามความสนใจ
                     เเละรายวิชาโท</h7>
-
+    
             </div>
-
+    
         </div>
-
+    
     </div>
     <!----------------intro for smartphone--------------------->
     <div class="intro-2 scroll-up">
         <h2 class="intro_text-2 scroll-up">INTRO</h2>
         <div class="intro-content-2 scroll-up">
-
+    
             <div class="col-md-4">
-                <div class="icon-2-1 scroll-up"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon1.PNG" alt="icon1"
-                        class="icon-img scroll-up">
+                <div class="icon-2-1 scroll-up"><img data-aos="flip-left" data-aos-duration="1000"
+                        src="pic/intro/intro_icon1.PNG" alt="icon1" class="icon-img scroll-up">
                 </div>
                 <h5 class="icon-text-1 scroll-up">ชั้นปีที่ 1</h5><br>
                 <h7 class="icon-text-1 scroll-up">จะเน้นเรียนหมวดวิชาทั่วไป
                     รายวิชาพื้นฐานของคณะ<br>(หมวดวิชาเฉพาะ)
                     เเละรายวิชาสาขาระดับต้น</h7>
-
+    
             </div>
             <div class="col-md-4">
-                <div class="icon-2-2"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon2.PNG" alt="icon2" class="icon-img scroll-up"></div>
+                <div class="icon-2-2"><img data-aos="flip-left" data-aos-duration="1000" src="pic/intro/intro_icon2.PNG"
+                        alt="icon2" class="icon-img scroll-up"></div>
                 <h5 class="icon-text-2 scroll-up">ชั้นปีที่ 2-3</h5><br>
                 <h7 class="icon-text-2 scroll-up">
                     เริ่มเรียนวิชาเฉพาะของคณะเพิ่มมากขึ้นยังมีการเรียนหมวดวิชาทั่วไปอยู่บ้างเเละเรียนวิชาสาขาระดับต้น
@@ -222,7 +239,8 @@
                     เมื่อปี 3 จะมีการเรียนวิชาบังคับเลือกเป็นส่วนใหญ่ เเละเรียนรายวิชาโท</h7>
             </div>
             <div class="col-md-4">
-                <div class="icon-2-3"><img data-aos="flip-left" data-aos-duration="1000"  src="pic/intro/intro_icon3.PNG" alt="icon3" class="icon-img scroll-up"></div>
+                <div class="icon-2-3"><img data-aos="flip-right" data-aos-duration="1000" src="pic/intro/intro_icon3.PNG"
+                        alt="icon3" class="icon-img scroll-up"></div>
                 <h5 class="icon-text-3 scroll-up">ชั้นปีที่ 4</h5><br>
                 <h7 class="icon-text-3 scroll-up">วิชาบังคับเลือกเอกตามความสนใจ
                     เเละรายวิชาโท</h7>
@@ -230,9 +248,8 @@
             <br>
             <br>
         </div>
-
+    
     </div>
-
     
     <!----------------outline--------------------->
     <div class="outline scroll-up"><a id="outline"></a>
@@ -1119,7 +1136,18 @@
                 checkVisibility();  // check visibility when the page loads
             });
         </script>
+</div>
+        <!-- Pre-loader Funtion-->
+        <script>
+            function activeShowPage() {
+                let content = setTimeout(showPage, 1000);
+            }
 
+            function showPage() {
+                document.getElementById("preLoader").style.display = "none";
+                document.getElementById("preContent").style.display = "block";
+            }
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
